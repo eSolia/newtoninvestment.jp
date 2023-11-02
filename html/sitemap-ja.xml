@@ -4,19 +4,22 @@
 <!--  created with free sitemap generation system www.sitemapxml.jp  --> 
 <url>
   <loc>https://newtoninvestment.jp/</loc>
-  <xhtml:link rel="alternate" hreflang="ja" href="https://newtoninvestment.jp"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://newtoninvestment/.jp/en"/>
   <priority>1.0</priority>
 </url>
 <url>
   <loc>https://newtoninvestment.jp/ceo.html</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://newtoninvestment.jp/en/ceo.html"/>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://newtoninvestment.jp/terms.html</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://newtoninvestment.jp/en/terms.html"/>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://newtoninvestment.jp/privacy.html</loc>
+  <xhtml:link rel="alternate" hreflang="en" href="https://newtoninvestment.jp/en/privacy.html"/>
   <priority>0.8</priority>
 </url>
 <url>
