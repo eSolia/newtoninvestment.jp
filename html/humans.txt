@@ -1,1 +1,22 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
 
+/* TEAM */
+
+    Owner: Newton Investment Partners Inc.
+    Contact: https://newtoninvestment.jp/en#inquiries
+    Design: http://minsak.jp
+    Infrastructure: https://esolia.com
+
+/* TECHNOLOGY */
+
+    Site Base: HTML5, CSS3, Javascript, jQuery
+    Site Repository: Github, https://github.com/eSolia/newtoninvestment.jp
+    Site and DNS Hosting: Deno Deploy, GoDaddy
+
+/* SITE */
+
+	  Launched: 2023/10/30
+	  Languages: English / Japanese
+	  Doctype: HTML5
+	  IDE: VS Code
