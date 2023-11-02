@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  English sitemap  --> 
+<url>
+  <loc>https://newtoninvestment.jp/en</loc>
+  <xhtml:link 
+    rel="alternate" 
+    hreflang="ja" 
+    href="https://newtoninvestment.jp"/>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>https://newtoninvestment.jp/en/ceo.html</loc>
+  <xhtml:link 
+    rel="alternate" 
+    hreflang="ja" 
+    href="https://newtoninvestment.jp/ceo.html"/>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://newtoninvestment.jp/en/terms.html</loc>
+  <xhtml:link 
+    rel="alternate" 
+    hreflang="ja" 
+    href="https://newtoninvestment.jp/terms.html"/>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://newtoninvestment.jp/en/privacy.html</loc>
+  <xhtml:link 
+    rel="alternate" 
+    hreflang="ja" 
+    href="https://newtoninvestment.jp/privacy.html"/>
+  <priority>0.8</priority>
+</url>
+
+</urlset>
