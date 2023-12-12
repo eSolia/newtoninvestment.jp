@@ -1,0 +1,28 @@
+lang: en
+menu:
+  - text: Mission
+    img: /assets/img/txt_nav_mission.svg
+    url: /en/#mission
+  - text: Goal
+    img: /assets/img/txt_nav_goal.svg
+    url: /en/#goal
+  - text: Approach
+    img: /assets/img/txt_nav_approach.svg
+    url: /en/#approach
+  - text: Company
+    img: /assets/img/txt_nav_company.svg
+    url: /en/#company
+  - text: CEO Introduction
+    img: /assets/img/txt_nav_ceo.svg
+    url: /en/ceo/
+  - text: Inquiries
+    img: /assets/img/txt_nav_inquiries.svg
+    url: /en/#inquiries
+
+footer:
+  copy: ©NEWTON INVESTMENT PARTNERS.
+  links:
+    - text: Terms of Use
+      url: /en/terms/
+    - text: Privacy Policy
+      url: /en/privacy/

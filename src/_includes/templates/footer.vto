@@ -1,0 +1,12 @@
+<footer>
+  <div class="inner">
+    <div class="links">
+      {{ for item of footer.links }}
+        <a href="{{ item.url }}">{{ item.text }}</a>
+      {{ /for }}
+    </div>
+    <div class="copy">{{ footer.copy }}</div>
+  </div>
+</footer>
+
+<script src="/assets/js/app.js"></script>

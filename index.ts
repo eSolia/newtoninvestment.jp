@@ -1,39 +1,30 @@
-import { Application } from "https://deno.land/x/oak/mod.ts";
+import Server from "lume/core/server.ts";
 
-const app = new Application();
+const server = new Server();
 
-// Logger
-app.use(async (ctx, next) => {
-  await next();
-  const rt = ctx.response.headers.get("X-Response-Time");
-  console.log(`${ctx.request.method} ${ctx.request.url} - ${rt}`);
-});
-
-// Timing
-app.use(async (ctx, next) => {
+server.use(async (request, next) => {
   const start = Date.now();
-  await next();
+  const response = await next(request);
   const ms = Date.now() - start;
-  ctx.response.headers.set("X-Response-Time", `${ms}ms`);
-  ctx.response.headers.set("X-Custom-Header", "Newton");
-  ctx.response.headers.set("Strict-Transport-Security", "max-age=31536000; includeSubDomains; preload");
-  ctx.response.headers.set("X-Frame-Options", "SAMEORIGIN");
-  ctx.response.headers.set("Referrer-Policy", "strict-origin");
-  ctx.response.headers.set("X-Content-Type-Options", "nosniff");
-  ctx.response.headers.set("X-Powered-By", "Blood Sweat Tears");
-  ctx.response.headers.set("Permissions-Policy", "accelerometer=(), ambient-light-sensor=*, autoplay=(self), battery=(self), camera=(), cross-origin-isolated=*, fullscreen=*, geolocation=(self), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), usb=()");
+
+  response.headers.set("X-Response-Time", `${ms}ms`);
+  response.headers.set("X-Custom-Header", "Newton");
+  response.headers.set(
+    "Strict-Transport-Security",
+    "max-age=31536000; includeSubDomains; preload",
+  );
+  response.headers.set("X-Frame-Options", "SAMEORIGIN");
+  response.headers.set("Referrer-Policy", "strict-origin");
+  response.headers.set("X-Content-Type-Options", "nosniff");
+  response.headers.set("X-Powered-By", "Blood Sweat Tears");
+  response.headers.set(
+    "Permissions-Policy",
+    "accelerometer=(), ambient-light-sensor=*, autoplay=(self), battery=(self), camera=(), cross-origin-isolated=*, fullscreen=*, geolocation=(self), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), usb=()",
+  );
+
+  return response;
 });
 
-app.use(async (ctx) => {
-  try {
-    await ctx.send({
-      root: `${Deno.cwd()}/html`,
-      index: "index.html",
-    });
-  } catch {
-    ctx.response.status = 404;
-    ctx.response.body = "404 File not found";
-  }
-});
+server.start();
 
-await app.listen({ port: 8000 });
+console.log("Listening on http://localhost:8000");

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+
+  <meta http-equiv="Content-Language" content="{{ lang }}">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container {{ it.containerClass }}">
+    {{ include "templates/header.vto" }}
+
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+
+  {{ include "templates/footer.vto" }}
+</body>
+</html>

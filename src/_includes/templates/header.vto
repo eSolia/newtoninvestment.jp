@@ -1,0 +1,66 @@
+<header>
+  <div class="inner">
+    <div class="logo">
+      <a href="{{ lang === 'ja' ? '/' : '/en/' }}">
+        <img class="logo_b" src="/assets/img/logo_b.svg" alt="NEWTON INVESTMENT PARTNERS">
+      </a>
+    </div>
+    <menu class="main">
+      <ul>
+        {{ for item of menu }}
+          <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+        {{ /for }}
+      </ul>
+    </menu>
+
+    <div class="lang">
+      <a href="/" {{ lang === 'ja' ? 'class=current' : ''}}>Jp</a>
+      <a href="/en/" {{ lang === 'en' ? 'class=current' : ''}}>En</a>
+    </div>
+  </div>
+</header>
+
+<a class="btn-menu is-sp" href="javascript:void(0);">
+  <div class="icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</a>
+
+<div class="lang is-sp">
+  {{ if lang === 'ja' }}
+    <span class="lang-item current">Jp</span>
+  {{ else }}
+    <a class="lang-item" href="/">Jp</a>
+  {{ /if }}
+
+  {{ if lang === 'en' }}
+    <span class="lang-item current">En</span>
+  {{ else }}
+    <a class="lang-item" href="/en/">En</a>
+  {{ /if }}
+</div>
+
+<div class="menu is-sp">
+  <div class="inner">
+    <div class="menu-content">
+      <div class="">
+        <div class="logo">
+          <a href="{{ lang === 'ja' ? '/' : '/en/' }}">
+            <img src="/assets/img/logo_w.svg" alt="NEWTON INVESTMENT PARTNERS" width="496">
+          </a>
+        </div>
+        <menu class="main">
+          <ul>
+            <ul>
+              {{ for item of menu }}
+                <li><a href="{{ item.url }}"><img src="{{ item.img }}" alt="{{ item.text }}"></a></li>
+              {{ /for }}
+            </ul>
+          </ul>
+        </menu>
+      </div>
+    </div>
+  </div>
+</div>
