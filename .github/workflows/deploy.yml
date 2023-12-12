@@ -26,6 +26,6 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: nwtn-lume-test
+          project: whole-lamb-95
           import-map: "./deno.json"
           entrypoint: index.ts
