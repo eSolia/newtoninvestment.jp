@@ -1,0 +1,128 @@
+layout: layouts/index.vto
+id: home
+metas:
+  title: NEWTON INVESTMENT PARTNERS
+  description: 長期的かつ持続的な「期待感」を生める企業への変革を意図する経営陣を有する企業を、中長期でのマイノリティー投資を通じて、主要株主として支援します
+priority: 1
+containerClass: index
+lead: |
+  <h2><img src="/assets/img/txt_japanactivationcapital.svg" alt="Japan Activation Capital"></h2>
+  <div class="desc">
+    NEWTON INVESTMENT PARTNERSが<br>管理・運営するファンド
+  </div>
+
+mission: |
+  <h2><img src="/assets/img/txt_mission.svg" alt="Mission"></h2>
+  <div class="desc">
+  『変革意思のある投資先経営陣との信頼に基づいた対話と提言と実行支援<br class="is-pc">を通じ、期待感が継続する企業成長と持続的な時価総額の増大を実現』
+  </div>
+
+goal: |
+  <h2><img src="/assets/img/txt_goal.svg" alt="Goal"></h2>
+  <div class="items">
+    <div class="item">
+      <div class="head">
+        <div class="numb">1.</div>
+        <div class="txt">株式市場において、持続性をもった高いマルチプルによる株価高評価を獲得できる企業を増やすことを目指します</div>
+      </div>
+      <div class="desc">
+        将来への高い「期待感」を株式市場やステークホルダーに感じさせることが出来る企業へと、投資先企業が進化することを支援します
+      </div>
+    </div>
+    <div class="item">
+      <div class="head">
+        <div class="numb">2.</div>
+        <div class="txt">投資先企業の変革だけでなく、その属する業界や日本経済全体に健全なインパクトを与えることを目指します</div>
+      </div>
+      <div class="desc">
+        投資先の変革を通じて、投資先が属する業界にも健全なインパクトをもたらし、ひいては日本経済全体の高い成長につながることを企図します
+      </div>
+    </div>
+    <div class="item">
+      <div class="head">
+        <div class="numb">3.</div>
+        <div class="txt">日本の社会全体に好循環のスパイラルを醸成することを目指します</div>
+      </div>
+      <div class="desc">
+        社会全体への好循環スパイラルの醸成を目指します。投資先におけるサステイナビリティ活動の後押しはもちろんのこと、投資先の成長を通じたその従業員やバリューチェーンにいる中小取引先企業への利益貢献の分配を促します
+      </div>
+    </div>
+  </div>
+
+approach: |
+  <h2><img src="/assets/img/txt_approach.svg" alt="Approach"></h2>
+  <div class="desc">
+    長期的かつ持続的な「期待感」を生める企業への変革を意図する経営陣を有する企業を、中長期でのマイノリティー投資を通じて、主要株主として支援します
+  </div>
+  <ul>
+    <li>東京証券取引所上場の大手企業を投資先とします</li>
+    <li>変革意思のある経営陣との信頼関係をベースに、戦略等の議論と提言にとどまらず、経営イニシアティブ実行の支援まで行います</li>
+    <li>自社株買い等の短期的な株価向上策は提言せず、「本質的かつ持続的な企業成長」と「マルチプル評価の増加を伴う株主価値の持続的な向上」を目指し、大胆な経営イニシアティブを取れるように株主として経営陣のリスクテイクを後押しします</li>
+  </ul>
+  <div class="desc">
+    当社は、数々の日本企業の変革を支援した経験を有するグローバル大手プライベートエクイティファンド出身者が創設し、戦略コンサルティング会社、プライベートエクイティファンド、投資銀行等の出身者、および大手事業会社や金融機関で経営陣として変革を主導した経験を有するオペレーティング・エグゼクティブやシニア・アドバイザーが集合し、多様な知見とネットワークにより、投資先への高い付加価値の提供を追求します<br><br>
+    また当社の取締役や投資委員会メンバーにも、数々の実績を有する外部有識者が参画し、当社の戦略立案、経営判断や投資判断に外部の知見を入れることで、客観性を持った経営を行っていきます
+  </div>
+
+company: |
+  <h2><img src="/assets/img/txt_company.svg" alt="Company"></h2>
+  <div class="desc">
+    JAPAN ACTIVATION CAPITALはNEWTON INVESTMENT PARTNERSが<br>運営・管理を行うファンドです
+  </div>
+  <div class="table table-l">
+    <div class="item">
+      <div class="head">社名</div>
+      <div class="body">ニュートン・インベストメント・パートナーズ株式会社</div>
+    </div>
+    <div class="item">
+      <div class="head">代表取締役 CEO</div>
+      <div class="body">
+        <a href="/ceo.html">
+          <div class="label">大塚 博行</div>
+          <div class="icon"><img src="/assets/img/icon_arrow.svg"></div>
+        </a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="head">事業内容</div>
+      <div class="body">適格機関投資家等特例業務届出者</div>
+    </div>
+    <div class="item">
+      <div class="head">所在地</div>
+      <div class="body">〒107-0062 東京都港区南青山二丁目15番5号 FARO青山201</div>
+    </div>
+    <div class="item">
+      <div class="head">連絡先</div>
+      <div class="body">
+        <a href="mailto:contact@newtoninvestment.jp">
+          <div class="label">contact@newtoninvestment.jp</div>
+          <div class="icon"><img src="/assets/img/icon_arrow.svg"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+inquiries: |
+  <h2><img src="/assets/img/txt_inquiries.svg" alt="Inquiries"></h2>
+  <div class="desc2">
+    報道関係者からのお問い合わせ :
+  </div>
+  <div class="table">
+    <div class="item">
+      <div class="head">広報代理</div>
+      <div class="body">Kekst CNC</div>
+    </div>
+    <div class="item">
+      <div class="head">E-Mail</div>
+      <div class="body">
+        <a href="mailto:NewtonInvestment@kekstcnc.com">
+          <div class="label">NewtonInvestment@kekstcnc.com</div>
+          <div class="icon"><img src="/assets/img/icon_arrow.svg"></div>
+        </a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="head">担当者</div>
+      <div class="body">大谷みな子、アンドリュー・マンデル</div>
+    </div>
+  </div>

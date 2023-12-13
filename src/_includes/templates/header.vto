@@ -14,8 +14,15 @@
     </menu>
 
     <div class="lang">
-      <a href="/" {{ lang === 'ja' ? 'class=current' : ''}}>Jp</a>
-      <a href="/en/" {{ lang === 'en' ? 'class=current' : ''}}>En</a>
+      {{ if lang === 'ja' }}
+        {{ set alt = alternates.find((data) => data.lang === 'en') }}
+        <a href="{{ url }}" class=current>Jp</a>
+        <a href="{{ alt?.url || '/en/' }}">En</a>
+      {{ else }}
+        {{ set alt = alternates.find((data) => data.lang === 'ja') }}
+        <a href="{{ alt?.url || '/' }}">Jp</a>
+        <a href="{{ url }}" class=current>En</a>
+      {{ /if }}
     </div>
   </div>
 </header>
@@ -32,13 +39,15 @@
   {{ if lang === 'ja' }}
     <span class="lang-item current">Jp</span>
   {{ else }}
-    <a class="lang-item" href="/">Jp</a>
+    {{ set alt = alternates.find((data) => data.lang === 'ja') }}
+    <a class="lang-item" href="{{ alt?.url || '/' }}">Jp</a>
   {{ /if }}
 
   {{ if lang === 'en' }}
     <span class="lang-item current">En</span>
   {{ else }}
-    <a class="lang-item" href="/en/">En</a>
+    {{ set alt = alternates.find((data) => data.lang === 'en') }}
+    <a class="lang-item" href="{{ alt?.url || '/en/' }}">En</a>
   {{ /if }}
 </div>
 

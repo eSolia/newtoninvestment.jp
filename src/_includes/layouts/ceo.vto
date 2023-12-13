@@ -1,0 +1,21 @@
+---
+layout: ./base.vto
+containerClass: ceo
+---
+<section class="ceo" id="ceo">
+  <div class="inner">
+    <h2>{{ title }}</h2>
+    <div class="name">
+      {{ name }}
+    </div>
+    <div class="profile-main">
+      {{ content }}
+    </div>
+
+    {{ if it.sub }}
+    <div class="profile-sub">
+      {{ it.sub }}
+    </div>
+    {{ /if }}
+  </div>
+</section>
