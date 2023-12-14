@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: esolia/newtoninvestment.jp
+  name: git-gateway
   branch: lume
-  site_domain: brilliant-souffle-a0c758.netlify.app
 
 media_folder: media
 
