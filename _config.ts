@@ -33,6 +33,7 @@ site.use(sitemap({
 }));
 
 site.use(decapCMS({
+  identity: "github",
 }));
 
 site.copy("assets");
