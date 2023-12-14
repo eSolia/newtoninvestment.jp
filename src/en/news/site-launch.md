@@ -1,6 +1,7 @@
 ---
 layout: layouts/news.vto
-id: news
+id: 2023103001
+lang: en
 title: Site Launch TEST
 date: 2023-10-30T00:30:27.166Z
 description: Newton Investment Partners Website Launch!

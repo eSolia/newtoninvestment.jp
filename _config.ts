@@ -6,16 +6,18 @@ import sitemap from "lume/plugins/sitemap.ts";
 import decapCMS from "lume/plugins/decap_cms.ts";
 
 // Change markdown-it configuration
-const markdown = {
-  options: {
-    breaks: false,
-    xhtmlOut: true,
-  },
-};
+// const markdown = {
+//   options: {
+//     breaks: false,
+//     xhtmlOut: true,
+//   },
+// };
 
 const site = lume(
-  { src: "src" },
-  { markdown }
+  { 
+    src: "src",
+    location: new URL("https://newtoninvestment.jp")
+  }
 );
 
 site.use(multilanguage({
@@ -28,6 +30,7 @@ site.use(favicon({
 }));
 
 site.use(metas());
+
 site.use(sitemap({
   priority: "priority",
 }));
