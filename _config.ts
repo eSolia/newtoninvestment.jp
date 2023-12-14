@@ -33,7 +33,6 @@ site.use(sitemap({
 }));
 
 site.use(decapCMS({
-  identity: "netlify",
 }));
 
 site.copy("assets");
