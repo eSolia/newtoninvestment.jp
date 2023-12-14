@@ -3,7 +3,6 @@ backend:
   repo: esolia/newtoninvestment.jp
   branch: lume
   site_domain: brilliant-souffle-a0c758.netlify.app
-  base_url: https://brilliant-souffle-a0c758.netlify.app
 
 media_folder: media
 
