@@ -3,10 +3,20 @@ import multilanguage from "lume/plugins/multilanguage.ts";
 import favicon from "lume/plugins/favicon.ts";
 import metas from "lume/plugins/metas.ts";
 import sitemap from "lume/plugins/sitemap.ts";
+import decapCMS from "lume/plugins/decap_cms.ts";
 
-const site = lume({
-  src: "src",
-});
+// Change markdown-it configuration
+const markdown = {
+  options: {
+    breaks: false,
+    xhtmlOut: true,
+  },
+};
+
+const site = lume(
+  { src: "src" },
+  { markdown }
+);
 
 site.use(multilanguage({
   languages: ["en", "ja"],
@@ -20,6 +30,10 @@ site.use(favicon({
 site.use(metas());
 site.use(sitemap({
   priority: "priority",
+}));
+
+site.use(decapCMS({
+  identity: "netlify",
 }));
 
 site.copy("assets");
