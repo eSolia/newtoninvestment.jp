@@ -33,7 +33,7 @@ site.use(sitemap({
 }));
 
 site.use(decapCMS({
-  identity: "github",
+  netlifyIdentity: "true",
 }));
 
 site.copy("assets");
