@@ -1,0 +1,41 @@
+backend:
+  name: github
+  repo: esolia/newtoninvestment.jp
+  branch: lume
+  site_domain: brilliant-souffle-a0c758.netlify.app
+
+media_folder: media
+
+slug: 
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: '-'
+
+collections:
+  - label: News
+    name: news
+    description: Create or edit news items here
+    folder: news
+    extension: md
+    create: true
+    view_filter: draft
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Date
+        name: date
+        widget: datetime
+      - label: Description
+        name: description
+        widget: string
+      - label: Tags
+        name: tags
+        widget: list
+      - label: Draft
+        name: draft
+        widget: boolean
+        required: false
+      - label: Content
+        name: body
+        widget: markdown
