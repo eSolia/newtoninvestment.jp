@@ -4,7 +4,7 @@ backend:
 
 site_url: https://luminous-jelly-41b609.netlify.app/
 display_url: https://luminous-jelly-41b609.netlify.app/
-logo_url: https://luminous-jelly-41b609.netlify.app/assets/img/logo_b.svg
+logo_url: https://luminous-jelly-41b609.netlify.app/assets/img/ogp.png
 
 media_folder: /src/assets/media
 public_folder: /assets/media
