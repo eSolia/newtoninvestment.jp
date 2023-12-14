@@ -9,3 +9,5 @@ tags:
   - PR
 ---
 2023年10月30日に新ウェブサイトを公開しましたので、今後ともよろしくお願いします。
+
+![](/assets/media/kylie-cogley-sakushima.jpg)

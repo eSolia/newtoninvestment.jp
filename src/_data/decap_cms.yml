@@ -2,9 +2,16 @@ backend:
   name: git-gateway
   branch: lume
 
-media_folder: media
+site_url: https://luminous-jelly-41b609.netlify.app/
+display_url: https://luminous-jelly-41b609.netlify.app/
+logo_url: https://luminous-jelly-41b609.netlify.app/assets/img/logo_b.svg
+
+media_folder: /src/assets/media
+public_folder: /assets/media
 
 publish_mode: editorial_workflow
+
+show_preview_links: true
 
 slug: 
   encoding: ascii
@@ -16,6 +23,7 @@ collections:
     name: news
     description: Create or edit news items here
     folder: src/news
+    preview_path: news/{{slug}}
     extension: md
     create: true
     view_filter: draft
