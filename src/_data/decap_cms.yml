@@ -27,6 +27,7 @@ collections:
     extension: md
     create: true
     view_filter: draft
+    slug: "{{year}}{{month}}{{day}}_{{title}}_{{lang}}"
     fields:
       - label: Title
         name: title
@@ -34,6 +35,13 @@ collections:
       - label: Date
         name: date
         widget: datetime
+      - label: Language
+        name: lang
+        widget: select
+        default: ja
+        options:
+          - { label: 日本語, value: ja }
+          - { label: English, value: en }
       - label: Description
         name: description
         widget: string
@@ -47,3 +55,5 @@ collections:
       - label: Content
         name: body
         widget: markdown
+
+
