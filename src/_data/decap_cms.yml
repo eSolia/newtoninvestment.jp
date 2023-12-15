@@ -51,6 +51,10 @@ collections:
         name: description
         widget: string
         hint: Enter a short description for the news post in the same language as the content, to be used by search engines and social media.
+      - label: External Link
+        name: external_link
+        widget: string
+        hint: Enter a link to an external news item. The link text will be the title of the news item.
       - label: Tags
         name: tags
         widget: list
