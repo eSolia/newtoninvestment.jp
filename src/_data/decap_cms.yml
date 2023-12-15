@@ -42,9 +42,15 @@ collections:
         options:
           - { label: 日本語, value: ja }
           - { label: English, value: en }
+      - label: Id
+        name: id
+        widget: string
+        default: YYYYMMDDN
+        hint: This links the languages of a news item, so use e.g. 202312151 for both Japanese and English, then 202312152, ...3, for subsequent news items on that day.  
       - label: Description
         name: description
         widget: string
+        hint: This is used for the meta description tag in the HTML head, which is used by search engines and social media.
       - label: Tags
         name: tags
         widget: list
