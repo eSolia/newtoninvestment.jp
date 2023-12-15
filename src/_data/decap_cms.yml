@@ -14,7 +14,7 @@ publish_mode: editorial_workflow
 show_preview_links: true
 
 slug: 
-  encoding: ascii
+  encoding: unicode
   clean_accents: true
   sanitize_replacement: '-'
 
@@ -23,7 +23,7 @@ collections:
     name: news
     description: Create or edit news items here
     folder: src/news
-    preview_path: news/{{slug}}
+    preview_path: news/{{slug}}/
     extension: md
     create: true
     view_filter: draft
@@ -45,12 +45,12 @@ collections:
       - label: Id
         name: id
         widget: string
-        default: YYYYMMDDN
-        hint: This links the languages of a news item, so use e.g. 202312151 for both Japanese and English, then 202312152, ...3, for subsequent news items on that day.  
+        default: YYYYMMDDA
+        hint: This links the languages of a news item, so use e.g. 20231215A for both Japanese and English, then 20231215B, ...C, etc, for subsequent news items on that day.  
       - label: Description
         name: description
         widget: string
-        hint: This is used for the meta description tag in the HTML head, which is used by search engines and social media.
+        hint: Enter a short description for the news post in the same language as the content, to be used by search engines and social media.
       - label: Tags
         name: tags
         widget: list
