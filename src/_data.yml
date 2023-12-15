@@ -1,5 +1,4 @@
 layout: layouts/base.vto
-lang: ja
 priority: 0.8
 metas:
   title: =title

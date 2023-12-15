@@ -43,6 +43,22 @@ containerClass: index
   </div>
 </section>
 
+<section class="news" id="news">
+  <div class="inner">
+    <h2>{{ news.title }}</h2>
+    <div class="desc">
+      <ul class="news-list">
+        {{ for item of search.pages(`type=news lang=${lang}`, "date=desc", 10) }}
+        <li>
+          <time>{{ item.date |> date(undefined, lang) }}</time>
+          <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+        </li>
+        {{ /for }}
+      </ul>
+    </div>
+  </div>
+</section>
+
 <section class="inquiries" id="inquiries">
   <div class="inner">
     {{ inquiries }}

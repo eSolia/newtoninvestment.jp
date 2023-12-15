@@ -4,6 +4,10 @@ import favicon from "lume/plugins/favicon.ts";
 import metas from "lume/plugins/metas.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import decapCMS from "lume/plugins/decap_cms.ts";
+import date from "lume/plugins/date.ts";
+
+import en from "npm:date-fns@2.30.0/locale/en-US/index.js";
+import ja from "npm:date-fns@2.30.0/locale/ja/index.js";
 
 // Change markdown-it configuration
 // const markdown = {
@@ -19,6 +23,10 @@ const site = lume(
     location: new URL("https://newtoninvestment.jp")
   }
 );
+
+site.use(date({
+  locales: { en, ja },
+}));
 
 site.use(multilanguage({
   languages: ["en", "ja"],
