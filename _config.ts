@@ -5,6 +5,7 @@ import metas from "lume/plugins/metas.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import decapCMS from "lume/plugins/decap_cms.ts";
 import date from "lume/plugins/date.ts";
+import filterPages from "lume/plugins/filter_pages.ts";
 
 import en from "npm:date-fns@2.30.0/locale/en-US/index.js";
 import ja from "npm:date-fns@2.30.0/locale/ja/index.js";
@@ -18,10 +19,10 @@ import ja from "npm:date-fns@2.30.0/locale/ja/index.js";
 // };
 
 const site = lume(
-  { 
+  {
     src: "src",
-    location: new URL("https://newtoninvestment.jp")
-  }
+    location: new URL("https://newtoninvestment.jp"),
+  },
 );
 
 site.use(date({
@@ -38,6 +39,9 @@ site.use(favicon({
 }));
 
 site.use(metas());
+site.use(filterPages({
+  fn: (page) => !page.data.external_link,
+}));
 
 site.use(sitemap({
   priority: "priority",
