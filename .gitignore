@@ -53,5 +53,3 @@ bundle/
 # AWS stuff for publishing static files
 .aws-credentials.json
 .awspublish*
-
-_site
