@@ -3,10 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title> 
-  {{ if it.metas.title == site.title }} {{ site.title }}
-  {{ else if !it.metas.title }} {{ site.title }}
-  {{ else }} {{ it.metas.title }} | {{ site.title }}
-  {{ /if }}
+  {{ it.title ? `${title} | ${site.title}` : site.title }}
   </title>
   <meta http-equiv="Content-Language" content="{{ lang }}">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
