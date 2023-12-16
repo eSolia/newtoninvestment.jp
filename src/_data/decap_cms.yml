@@ -65,5 +65,43 @@ collections:
       - label: Content
         name: body
         widget: markdown
+  - label: Bios
+    name: bios
+    description: Create or edit biographies here
+    folder: src/bios
+    preview_path: bios/{{slug}}/
+    extension: yml
+    create: true
+    view_filter: draft
+    slug: "{{name}}"
+    fields:
+      - label: Name
+        name: name
+        widget: string
+      - label: Title
+        name: title
+        widget: string
+      - label: Language
+        name: lang
+        widget: select
+        default: ja
+        options:
+          - { label: 日本語, value: ja }
+          - { label: English, value: en }
+      - label: Id
+        name: id
+        widget: string
+        default: YYYYMMDDA
+        hint: This links the languages of a news item, so use e.g. 20231215A for both Japanese and English, then 20231215B, ...C, etc, for subsequent news items on that day.  
+      - label: Draft
+        name: draft
+        widget: boolean
+        required: false
+      - label: Image
+        name: img
+        widget: image
+      - label: Content
+        name: bio
+        widget: markdown
 
 
