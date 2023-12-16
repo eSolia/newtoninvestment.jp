@@ -1,18 +1,13 @@
 ---
-layout: layouts/terms.vto
-id: bio
-title: メンバー紹介
-metas:
-  title: メンバー紹介
-  description: asdf
+layout: ./base.vto
+containerClass: bios
 ---
-
 <ul>
-  {{ for item of bios }}
+  {{ for item of search.pages(`type=bio lang=${lang}`) }}
   <li>
     <article>
       <img src="{{ item.img }}" alt="{{ item.name }}" width="200px"><br>
-      <strong>{{ item.name }}</strong>
+      <strong><a href="{{ item.url }}">{{ item.name }}</a></strong>
       <p>{{ item.title }}</p>
       <p>{{ item.short }}</p>
     </article>

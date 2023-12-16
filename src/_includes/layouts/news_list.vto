@@ -1,0 +1,28 @@
+---
+layout: ./base.vto
+containerClass: news
+---
+<section class="ceo" id="ceo">
+  <div class="inner">
+    <ul class="news-list">
+      {{ for item of results }}
+      <li>
+        <time>{{ item.date |> date(undefined, lang) }}</time>
+        {{ if item.external_link }}
+          <p><a href="{{ item.external_link }}" target="_blank">{{ item.title }}</a></p>
+        {{ else }}
+          <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+        {{ /if }}
+      </li>
+      {{ /for }}
+    </ul>
+
+    {{ if pagination.previous }}
+      <a href="{{ pagination.previous }}">Previous page</a>
+    {{ /if }}
+
+    {{ if pagination.next }}
+      <a href="{{ pagination.next }}">Next page</a>
+    {{ /if }}
+  </div>
+</section>

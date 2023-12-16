@@ -1,0 +1,6 @@
+layout: layouts/bios.vto
+id: bio
+title: Bio
+metas:
+  title: Member Biographies
+  description: asdf
