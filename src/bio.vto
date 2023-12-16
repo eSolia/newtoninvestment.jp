@@ -3,20 +3,18 @@ layout: layouts/terms.vto
 id: bio
 title: メンバー紹介
 metas:
-  title: ご利用条件 | NEWTON INVESTMENT PARTNERS
-  description: 長期的かつ持続的な「期待感」を生める企業への変革を意図する経営陣を有する企業を、中長期でのマイノリティー投資を通じて、主要株主として支援します
+  title: メンバー紹介
+  description: asdf
 ---
 
 <ul>
   {{ for item of bios }}
   <li>
     <article>
-      <img src="{{ item.img }}" alt="{{ item.name }}">
-      <h2>{{ item.name }}</h2>
+      <img src="{{ item.img }}" alt="{{ item.name }}" width="200px"><br>
+      <strong>{{ item.name }}</strong>
       <p>{{ item.title }}</p>
-      <div>
-        {{ item.bio |> md }}
-      </div>
+      <p>{{ item.short }}</p>
     </article>
   </li>
   {{ /for }}

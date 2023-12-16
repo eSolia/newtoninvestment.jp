@@ -2,8 +2,12 @@
 <html lang="{{ lang }}">
 <head>
   <meta charset="UTF-8">
-  <title>{{ it.title }}</title>
-
+  <title> 
+  {{ if it.metas.title == site.title }} {{ site.title }}
+  {{ else if !it.metas.title }} {{ site.title }}
+  {{ else }} {{ it.metas.title }} | {{ site.title }}
+  {{ /if }}
+  </title>
   <meta http-equiv="Content-Language" content="{{ lang }}">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta name="format-detection" content="telephone=no">
