@@ -18,6 +18,12 @@
   <!-- Fathom - beautiful, simple website analytics -->
   <script src="https://cdn.usefathom.com/script.js" data-site="EGWBHZIW" defer></script>
   <!-- / Fathom -->
+  
+  {{ if it.url == "/" }}
+  {{ include "templates/netlify-identity-widget.vto" }}
+  {{ /if }}
+
+
 </head>
 <body>
   <div class="container {{ it.containerClass }}">
@@ -29,5 +35,9 @@
   </div>
 
   {{ include "templates/footer.vto" }}
+  {{ if it.url == "/" }}
+  {{ include "templates/netlify-redirect.vto" }}
+  {{ /if }}
+
 </body>
 </html>
