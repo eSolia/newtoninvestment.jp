@@ -2,9 +2,11 @@
 layout: ./base.vto
 containerClass: news
 ---
-<section class="ceo" id="ceo">
+<section class="news">
   <div class="inner">
-    <ul class="news-list">
+    <h2>{{ title }}</h2>
+
+    <ul class="news-list" id="news">
       {{ for item of results }}
       <li>
         <time>{{ item.date |> date(undefined, lang) }}</time>
@@ -18,11 +20,16 @@ containerClass: news
     </ul>
 
     {{ if pagination.previous }}
-      <a href="{{ pagination.previous }}">Previous page</a>
+      <a class="link" href="{{ pagination.previous }}">
+        Previous page
+      </a>
     {{ /if }}
 
     {{ if pagination.next }}
-      <a href="{{ pagination.next }}">Next page</a>
+      <a class="link" href="{{ pagination.next }}">
+        Next page
+        <div class="icon"><img src="/assets/img/icon_arrow.svg"></div>
+      </a>
     {{ /if }}
   </div>
 </section>

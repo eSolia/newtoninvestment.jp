@@ -2,14 +2,18 @@
 layout: ./base.vto
 containerClass: bios
 ---
-<ul>
+<ul id="bios-list">
   {{ for item of search.pages(`type=bio lang=${lang}`) }}
   <li>
-    <article>
-      <img src="{{ item.img }}" alt="{{ item.name }}" width="200px"><br>
-      <strong><a href="{{ item.url }}">{{ item.name }}</a></strong>
-      <p>{{ item.title }}</p>
-      <p>{{ item.short }}</p>
+    <article id="bio">
+      <a class="bio-header" href="{{ item.url }}">
+        <img src="{{ item.img }}" alt="{{ item.name }}" width="200" height=200>
+
+        <div>
+          <p>{{ item.short }}</p>
+          <h3>{{ item.title }}</h3>
+        </div>
+      </a>
     </article>
   </li>
   {{ /for }}

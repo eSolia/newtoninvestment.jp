@@ -43,11 +43,11 @@ containerClass: index
   </div>
 </section>
 
-<section class="news" id="news">
+<section class="news">
   <div class="inner">
     <h2>{{ news.title }}</h2>
     <div class="desc">
-      <ul class="news-list">
+      <ul class="news-list" id="news">
         {{ for item of search.pages(`type=news lang=${lang}`, "date=desc", 10) }}
         <li>
           <time>{{ item.date |> date(undefined, lang) }}</time>
@@ -60,7 +60,10 @@ containerClass: index
         {{ /for }}
       </ul>
 
-      <a href="{{ news.link.url }}">{{ news.link.text }}</a>
+      <a class="link" href="{{ news.link.url }}">
+        {{ news.link.text }}
+        <div class="icon"><img src="/assets/img/icon_arrow.svg"></div>
+      </a>
     </div>
   </div>
 </section>

@@ -76,10 +76,10 @@ collections:
     slug: "{{name}}"
     fields:
       - label: Name
-        name: name
+        name: title
         widget: string
       - label: Title
-        name: title
+        name: short
         widget: string
       - label: Language
         name: lang
@@ -103,5 +103,3 @@ collections:
       - label: Content
         name: bio
         widget: markdown
-
-

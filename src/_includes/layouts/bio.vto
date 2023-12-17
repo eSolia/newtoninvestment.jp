@@ -2,9 +2,13 @@
 layout: ./base.vto
 containerClass: bio
 ---
-<section class="bio" id="bio">
+<section class="bio" id="bio-view">
   <div class="inner">
-    <h2>{{ title }}</h2>
+    <div class="bio-view-header">
+      <img src="{{ it.img }}" alt="{{ title }}" width="200" height=200>
+      <h2>{{ title }}</h2>
+      <p>{{ short }}</p>
+    </div>
     <div class="txt">
       {{ bio |> md }}
     </div>
