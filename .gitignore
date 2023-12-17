@@ -55,3 +55,4 @@ bundle/
 .awspublish*
 
 _site
+_cache
