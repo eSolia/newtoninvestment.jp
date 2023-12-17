@@ -8,28 +8,20 @@ metas:
 
 menu:
   - text: Mission
-    img: /assets/img/txt_nav_mission.svg
     url: /#mission
   - text: Goal
-    img: /assets/img/txt_nav_goal.svg
     url: /#goal
   - text: Approach
-    img: /assets/img/txt_nav_approach.svg
     url: /#approach
   - text: Company
-    img: /assets/img/txt_nav_company.svg
     url: /#company
   - text: News
-    img: /assets/img/txt_nav_ceo.svg
     url: /news/
   - text: Bios
-    img: /assets/img/txt_nav_ceo.svg
     url: /bios/
   - text: CEO Message
-    img: /assets/img/txt_nav_ceo.svg
     url: /ceo/
   - text: Inquiries
-    img: /assets/img/txt_nav_inquiries.svg
     url: /#inquiries
 
 footer:
@@ -45,28 +37,20 @@ footer:
 en:
   menu:
     - text: Mission
-      img: /assets/img/txt_nav_mission.svg
       url: /en/#mission
     - text: Goal
-      img: /assets/img/txt_nav_goal.svg
       url: /en/#goal
     - text: Approach
-      img: /assets/img/txt_nav_approach.svg
       url: /en/#approach
     - text: Company
-      img: /assets/img/txt_nav_company.svg
       url: /en/#company
     - text: News
-      img: /assets/img/txt_nav_ceo.svg
       url: /news/
     - text: Bios
-      img: /assets/img/txt_nav_ceo.svg
       url: /bios/
     - text: CEO Message
-      img: /assets/img/txt_nav_ceo.svg
       url: /en/ceo/
     - text: Inquiries
-      img: /assets/img/txt_nav_inquiries.svg
       url: /en/#inquiries
 
   footer:
