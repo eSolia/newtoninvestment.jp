@@ -45,7 +45,7 @@ containerClass: index
 
 <section class="news">
   <div class="inner">
-    <h2>{{ news.title }}</h2>
+    <h2 class="new-title">{{ news.title }}</h2>
     <div class="desc">
       <ul class="news-list" id="news">
         {{ for item of search.pages(`type=news lang=${lang}`, "date=desc", 10) }}

@@ -12,19 +12,19 @@ news:
     url: /news/
 
 lead: |
-  <h2><img src="/assets/img/txt_japanactivationcapital.svg" alt="Japan Activation Capital"></h2>
+  <h2 class="new-title">Japan Activation Capital</h2>
   <div class="desc">
     NEWTON INVESTMENT PARTNERSが<br>管理・運営するファンド
   </div>
 
 mission: |
-  <h2><img src="/assets/img/txt_mission.svg" alt="Mission"></h2>
+  <h2 class="new-title">Mission</h2>
   <div class="desc">
   『変革意思のある投資先経営陣との信頼に基づいた対話と提言と実行支援<br class="is-pc">を通じ、期待感が継続する企業成長と持続的な時価総額の増大を実現』
   </div>
 
 goal: |
-  <h2><img src="/assets/img/txt_goal.svg" alt="Goal"></h2>
+  <h2 class="new-title">Goal</h2>
   <div class="items">
     <div class="item">
       <div class="head">
@@ -56,7 +56,7 @@ goal: |
   </div>
 
 approach: |
-  <h2><img src="/assets/img/txt_approach.svg" alt="Approach"></h2>
+  <h2 class="new-title">Approach</h2>
   <div class="desc">
     長期的かつ持続的な「期待感」を生める企業への変革を意図する経営陣を有する企業を、中長期でのマイノリティー投資を通じて、主要株主として支援します
   </div>
@@ -71,7 +71,7 @@ approach: |
   </div>
 
 company: |
-  <h2><img src="/assets/img/txt_company.svg" alt="Company"></h2>
+  <h2 class="new-title">Company</h2>
   <div class="desc">
     JAPAN ACTIVATION CAPITALはNEWTON INVESTMENT PARTNERSが<br>運営・管理を行うファンドです
   </div>
@@ -109,7 +109,7 @@ company: |
   </div>
 
 inquiries: |
-  <h2><img src="/assets/img/txt_inquiries.svg" alt="Inquiries"></h2>
+  <h2 class="new-title">Inquiries</h2>
   <div class="desc2">
     報道関係者からのお問い合わせ :
   </div>

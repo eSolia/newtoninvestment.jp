@@ -12,17 +12,17 @@ news:
     url: /en/news/
 
 lead: |
-  <h2><img src="/assets/img/txt_japanactivationcapital.svg" alt="Japan Activation Capital"></h2>
+  <h2 class="new-title">Japan Activation Capital</h2>
   <div class="desc">
     A solution provided by Newton Investment Partners.
   </div>
 mission: |
-  <h2><img src="/assets/img/txt_mission.svg" alt="Mission"></h2>
+  <h2 class="new-title">Mission</h2>
   <div class="desc">
     “Through constructive dialogue based on relationships of mutual trust as well as advisory and execution assistance, we will support Japanese companies with management teams that aspire to transform their businesses, improving the market expectations of companies’ continuous growth and achieving sustainable improvement of market capitalization.”
   </div>
 goal: |
-  <h2><img src="/assets/img/txt_goal.svg" alt="Goal"></h2>
+  <h2 class="new-title">Goal</h2>
   <div class="items">
     <div class="item">
       <div class="head">
@@ -54,7 +54,7 @@ goal: |
   </div>
 
 approach: |
-  <h2><img src="/assets/img/txt_approach.svg" alt="Approach"></h2>
+  <h2 class="new-title">Approach</h2>
   <div class="desc">
     Through mid- to long-term minority investments, we support companies with management teams that aspire to transform their businesses by helping them to create expectations of long-term and sustainable growth for their stakeholders.
   </div>
@@ -69,7 +69,7 @@ approach: |
   </div>
 
 company: |
-  <h2><img src="/assets/img/txt_company.svg" alt="Company"></h2>
+  <h2 class="new-title">Company</h2>
   <div class="table table-l">
     <div class="item">
       <div class="head">Company</div>
@@ -104,7 +104,7 @@ company: |
   </div>
 
 inquiries: |
-  <h2><img src="/assets/img/txt_inquiries.svg" alt="Inquiries"></h2>
+  <h2 class="new-title">Inquiries</h2>
   <div class="desc2">
     Media Inquiries
   </div>
