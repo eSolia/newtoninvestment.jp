@@ -49,6 +49,7 @@ site.use(sitemap({
 
 site.use(decapCMS({
   identity: "netlify",
+  path: "/6E77746E/"
 }));
 
 site.copy("assets");
