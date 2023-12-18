@@ -1228,6 +1228,9 @@ a {
 }
 .bio-view-header img {
   margin-bottom: 50px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  height: auto;
 }
 .txt.from-markdown p + p {
   margin-top: 1em;
