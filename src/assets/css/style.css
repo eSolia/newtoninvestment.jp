@@ -1,3 +1,5 @@
+@import "styles/fonts.css";
+
 * {
   margin: 0;
   padding: 0; }
@@ -321,7 +323,7 @@ a {
     width: 100vw;
     overflow-x: hidden; }
   body {
-    font-family: "Instrument Sans", "Noto Sans JP", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     line-height: 1.75;
     font-size: 14px;
     font-weight: 400;
