@@ -1,4 +1,20 @@
-@import "styles/fonts.css";
+/* noto-sans-jp-regular - japanese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/noto-sans-jp-v52-japanese-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-jp-600 - japanese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/noto-sans-jp-v52-japanese-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 * {
   margin: 0;
@@ -502,7 +518,7 @@ a {
       .content section .inner > .desc {
         font-size: 22px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 180%;
         /* 39.6px */
         letter-spacing: 1.1px;
@@ -705,7 +721,7 @@ a {
     overflow-x: hidden;
     width: 100%; }
   body {
-    font-family: "Instrument Sans", "Noto Sans JP", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     line-height: 1.75;
     overflow-x: hidden;
     font-size: 13px;
@@ -1212,6 +1228,9 @@ a {
 }
 .bio-view-header img {
   margin-bottom: 50px;
+}
+.txt.from-markdown p + p {
+  margin-top: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
