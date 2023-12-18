@@ -12,7 +12,7 @@ news:
     url: /en/news/
 
 lead: |
-  <h2 class="new-title">Japan Activation Capital</h2>
+  <h2 class="new-title is-smaller">Japan Activation Capital</h2>
   <div class="desc">
     A solution provided by Newton Investment Partners.
   </div>

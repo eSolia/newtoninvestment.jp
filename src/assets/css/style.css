@@ -1,5 +1,5 @@
 /* Todo: remove when we have the final font */
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://use.typekit.net/pmc0ikl.css');
 
 /* noto-sans-jp-regular - japanese */
 @font-face {
@@ -1240,13 +1240,18 @@ a {
 }
 
 .new-title {
-  font-family: 'Julius Sans One', 'Noto Sans JP', sans-serif;
-  font-weight: normal;
-  font-size: clamp(2.5rem, 5vw, 4rem) !important;
+  font-family: 'wedding-gothic-atf', 'Noto Sans JP', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 3.5rem) !important;
+}
+.new-title.is-smaller {
+  font-size: clamp(2rem, 4vw, 3rem) !important;
 }
 
 .menu-link {
-  font-family: 'Julius Sans One', 'Noto Sans JP', sans-serif;
-  font-weight: normal;
+  font-family: 'wedding-gothic-atf', 'Noto Sans JP', sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: 2rem;
 }

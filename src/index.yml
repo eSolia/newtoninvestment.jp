@@ -12,7 +12,7 @@ news:
     url: /news/
 
 lead: |
-  <h2 class="new-title">Japan Activation Capital</h2>
+  <h2 class="new-title is-smaller">Japan Activation Capital</h2>
   <div class="desc">
     NEWTON INVESTMENT PARTNERSが<br>管理・運営するファンド
   </div>
