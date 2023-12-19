@@ -1,4 +1,7 @@
 {
   "type": "bio",
-  "layout": "layouts/bio.vto"
+  "layout": "layouts/bio.vto",
+  "metas": {
+    "image": "=img"
+  }
 }
