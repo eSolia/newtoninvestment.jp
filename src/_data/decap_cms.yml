@@ -21,7 +21,7 @@ slug:
 collections:
   - label: News
     name: news
-    description: Create or edit news items here
+    description: Create or edit news items here. 
     folder: src/news
     preview_path: news/{{slug}}/
     extension: md
@@ -29,12 +29,14 @@ collections:
     view_filter: draft
     slug: "{{year}}{{month}}{{day}}_{{title}}_{{lang}}"
     fields:
-      - label: Title
+      - label: Page Title
         name: title
         widget: string
-      - label: Date
-        name: date
-        widget: datetime
+        hint: As the page metadata title, enter the title of the news item, in the same language as the content.
+      - label: Page Description
+        name: description
+        widget: string
+        hint: Enter a short description for the news post in the same language as the content, to be used by search engines and social media.
       - label: Language
         name: lang
         widget: select
@@ -47,14 +49,6 @@ collections:
         widget: string
         default: YYYYMMDDA
         hint: This links the languages of a news item, so use e.g. 20231215A for both Japanese and English, then 20231215B, ...C, etc, for subsequent news items on that day.  
-      - label: Description
-        name: description
-        widget: string
-        hint: Enter a short description for the news post in the same language as the content, to be used by search engines and social media.
-      - label: External Link
-        name: external_link
-        widget: string
-        hint: Enter a link to an external news item. The link text will be the title of the news item.
       - label: Tags
         name: tags
         widget: list
@@ -62,44 +56,69 @@ collections:
         name: draft
         widget: boolean
         required: false
-      - label: Content
+      - label: Date
+        name: date
+        widget: datetime
+        hint: Enter the date of the news item.
+      - label: External Link
+        name: external_link
+        widget: string
+        hint: If the news item is to be a link to an external site or PDF, enter the link here. The title of the news item will be used as the link text in the news list. 
+      - label: News Content
         name: body
         widget: markdown
   - label: Bios
     name: bios
-    description: Create or edit biographies here
+    description: Create or edit key member biographies here.
     folder: src/bios
     preview_path: bios/{{slug}}/
     extension: yml
     create: true
     view_filter: draft
-    slug: "{{name}}"
+    slug: "{{title}}_{{lang}}"
     fields:
-      - label: Name
+      - label: Page Title
         name: title
         widget: string
-      - label: Title
-        name: short
+        hint: As the page metadata title, enter the person's name and job title, separated by a comma, in the same language as the content. 
+      - label: Page Description
+        name: description
         widget: string
+        hint: Enter a short description for the bio item in the same language as the content, to be used by search engines and social media.
       - label: Language
         name: lang
         widget: select
         default: ja
+        hint: Enter the language of the content.
         options:
           - { label: 日本語, value: ja }
           - { label: English, value: en }
       - label: Id
         name: id
         widget: string
-        default: YYYYMMDDA
-        hint: This links the languages of a news item, so use e.g. 20231215A for both Japanese and English, then 20231215B, ...C, etc, for subsequent news items on that day.  
+        default: bio_person
+        hint: This links the languages of a bio item, so use e.g. bio_sato for both Japanese and English, then bio_sato1, ...2 and so on, for other people with that name.  
       - label: Draft
         name: draft
         widget: boolean
         required: false
+      - label: Full Name
+        name: name
+        widget: string
+        hint: Enter the person's full name, in the same language as the content.
+      - label: Position
+        name: position
+        widget: string
+        hint: Enter the person's job title, in the same language as the content.
+      - label: Short Introduction
+        name: short
+        widget: string
+        hint: Enter a short biographical sentence about the person. 
       - label: Image
         name: img
         widget: image
+        hint: Upload the featured image of the person, a "head shot", with the dimensions of NNNxNNN pixels.
       - label: Content
         name: bio
         widget: markdown
+        hint: Enter the person's biography, in the same language as the content.
