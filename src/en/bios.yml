@@ -1,6 +1,6 @@
 layout: layouts/bios.vto
-id: bio
-title: Bio
+id: bios
+title: Bios
 metas:
   title: Member Biographies
   description: asdf

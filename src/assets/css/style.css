@@ -1,5 +1,5 @@
 /* Todo: remove when we have the final font */
-@import url('https://use.typekit.net/pmc0ikl.css');
+/* @import url('https://use.typekit.net/pmc0ikl.css'); */
 
 /* noto-sans-jp-regular - japanese */
 @font-face {
@@ -1242,16 +1242,20 @@ a {
 .new-title {
   font-family: 'wedding-gothic-atf', 'Noto Sans JP', sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: clamp(2rem, 5vw, 3.5rem) !important;
 }
 .new-title.is-smaller {
   font-size: clamp(2rem, 4vw, 3rem) !important;
 }
 
+.new-title.is-bio-list {
+  font-size: clamp(1rem, 2vw, 1.5rem) !important;
+}
+
 .menu-link {
   font-family: 'wedding-gothic-atf', 'Noto Sans JP', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
