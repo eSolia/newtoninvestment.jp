@@ -28,6 +28,7 @@ collections:
     create: true
     view_filter: draft
     slug: "{{year}}{{month}}{{day}}_{{title}}_{{lang}}"
+    sortable_fields: ['commit_date', 'title', 'commit_author', 'lang', 'id']
     fields:
       - label: Page Title
         name: title
@@ -76,6 +77,7 @@ collections:
     create: true
     view_filter: draft
     slug: "{{title}}_{{lang}}"
+    sortable_fields: ['commit_date', 'title', 'commit_author', 'weight', 'lang', 'id']
     fields:
       - label: Page Title
         name: title
