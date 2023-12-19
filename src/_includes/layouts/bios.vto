@@ -8,7 +8,7 @@ containerClass: bios
   </div>
 
   <ul id="bios-list">
-    {{ for item of search.pages(`type=bio lang=${lang}`, "weight=desc") }}
+    {{ for item of search.pages(`type=bio lang=${lang}`, "weight") }}
     <li>
       <article id="bio">
         <a class="bio-header" href="{{ item.url }}">
