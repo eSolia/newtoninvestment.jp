@@ -35,7 +35,7 @@ collections:
         hint: As the page metadata title, enter the title of the news item, in the same language as the content.
       - label: Page Description
         name: description
-        widget: string
+        widget: text
         hint: Enter a short description for the news post in the same language as the content, to be used by search engines and social media.
       - label: Language
         name: lang
@@ -83,7 +83,7 @@ collections:
         hint: As the page metadata title, enter the person's name and job title, separated by a comma, in the same language as the content. 
       - label: Page Description
         name: description
-        widget: string
+        widget: text
         hint: Enter a short description for the bio item in the same language as the content, to be used by search engines and social media.
       - label: Language
         name: lang
@@ -112,7 +112,7 @@ collections:
         hint: Enter the person's job title, in the same language as the content.
       - label: Short Introduction
         name: short
-        widget: string
+        widget: text
         hint: Enter a short biographical sentence about the person. 
       - label: Image
         name: img
