@@ -36,7 +36,7 @@ collections:
       - label: Page Description
         name: description
         widget: text
-        hint: Enter a short description for the news post in the same language as the content, to be used by search engines and social media.
+        hint: As the page metadata description, enter a short description for the news post in the same language as the content, to be used by search engines and social media.
       - label: Language
         name: lang
         widget: select
@@ -84,7 +84,7 @@ collections:
       - label: Page Description
         name: description
         widget: text
-        hint: Enter a short description for the bio item in the same language as the content, to be used by search engines and social media.
+        hint: As the page metadata description, enter a short description for the bio item in the same language as the content, to be used by search engines and social media.
       - label: Language
         name: lang
         widget: select
