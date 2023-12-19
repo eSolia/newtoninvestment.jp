@@ -5,18 +5,25 @@
 
     Owner: Newton Investment Partners Inc.
     Contact: https://newtoninvestment.jp/en#inquiries
-    Design: http://minsak.jp
-    Infrastructure: https://esolia.com
+    Original Design: http://minsak.jp
+    Design Updates and Generator Dev: Óscar Otero https://oscarotero.com/
+    Infrastructure: Rick Cogley https://esolia.com
 
 /* TECHNOLOGY */
 
-    Site Base: HTML5, CSS3, Javascript, jQuery
+    Site Base: HTML5, CSS3, Javascript
+    Site Generator: Lume, https://lume.land/
+    Site Templates: Vento, https://vento.js.org/
+    Site CMS: decapCMS, https://decapcms.org/
     Site Repository: Github, https://github.com/eSolia/newtoninvestment.jp
-    Site and DNS Hosting: Deno Deploy, GoDaddy
+    Site and DNS Hosting: Netlify
+    Registrar: GoDaddy
 
 /* SITE */
 
-	  Launched: 2023/10/30
+	  Launches: 
+         * Original: 2023/10/30
+         * Lume and decapCMS Update: 2024/01/09
 	  Languages: English / Japanese
 	  Doctype: HTML5
 	  IDE: VS Code
