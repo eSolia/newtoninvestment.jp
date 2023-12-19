@@ -1246,6 +1246,7 @@ a {
   font-family: 'wedding-gothic-atf', 'Noto Sans JP', sans-serif;
   font-style: normal;
   font-weight: 600;
+  line-height: 1.2;
   font-size: clamp(2rem, 5vw, 3.5rem) !important;
 }
 .new-title.is-smaller {
@@ -1254,6 +1255,7 @@ a {
 
 .new-title.is-bio-list {
   font-size: clamp(1rem, 2vw, 1.5rem) !important;
+  margin-top: .25em;
 }
 
 .menu-link {
