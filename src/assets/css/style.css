@@ -333,7 +333,7 @@ a {
     opacity: 0.0;
     transform: translate(-50%, 0) scale(4.5, 1.5); } }
 
-@media only screen and (min-width: 1101px) {
+@media only screen and (min-width: 1301px) {
   .is-sp {
     display: none !important; }
   html {
@@ -369,7 +369,8 @@ a {
     header.scroll .inner .lang a {
       border: none; }
       header.scroll .inner .lang a.current {
-        border: 1px solid; }
+        
+        }
     header.scroll .inner .main ul a {
       color: #00236D; }
     header:before {
@@ -403,7 +404,13 @@ a {
         right: 0px;
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        border-radius: 14px;
+        overflow:hidden;
+        border: solid 1px #00236d;
+        background: white;
+        padding: 2px;
+        }
         header .inner .lang a {
           display: block;
           width: 50px;
@@ -411,14 +418,12 @@ a {
           display: flex;
           justify-content: center;
           align-items: center;
-          background: gainsboro;
-          color: gray;
-          border: 1px solid;
           box-sizing: border-box; }
           header .inner .lang a.current {
-            border: none;
-            background: #DDE8FF;
-            color: #00236D; }
+            background: #00236d;
+            color: white;
+            border-radius:11px;
+            }
       header .inner .main ul {
         display: flex;
         gap: 30px;
@@ -428,7 +433,7 @@ a {
           display: block;
           font-size: 14px;
           font-style: normal;
-          font-weight: 400;
+          font-weight: 500;
           line-height: normal;
           color: white; }
   footer {
@@ -703,9 +708,7 @@ a {
       position: absolute;
       transform: translate(0px, -50%); }
     header .inner .main ul {
-      gap: 40px; }
-      header .inner .main ul a {
-        font-size: 18px; }
+      gap: 30px; }
   .container.index:before {
     height: 1090px;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 390px), 0% 100%);
@@ -715,7 +718,7 @@ a {
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% calc(100% - 390px));
             clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% calc(100% - 390px)); } }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1300px) {
   .is-pc {
     display: none !important; }
   html {
