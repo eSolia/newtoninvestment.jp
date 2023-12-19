@@ -411,13 +411,13 @@ a {
           display: flex;
           justify-content: center;
           align-items: center;
-          background: #00236D;
-          color: white;
+          background: gainsboro;
+          color: gray;
           border: 1px solid;
           box-sizing: border-box; }
           header .inner .lang a.current {
             border: none;
-            background: white;
+            background: #DDE8FF;
             color: #00236D; }
       header .inner .main ul {
         display: flex;
