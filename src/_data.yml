@@ -4,7 +4,7 @@ metas:
   title: =title
   description: =description
   image: /assets/img/ogp.png
-  site: NEWTON INVESTMENT PARTNERS
+  site: =site.title
 
 menu:
   - text: Mission
