@@ -97,7 +97,11 @@ collections:
         name: id
         widget: string
         default: bio_person
-        hint: This links the languages of a bio item, so use e.g. bio_sato for both Japanese and English, then bio_sato1, ...2 and so on, for other people with that name.  
+        hint: This links the languages of a bio item, so use e.g. bio_sato for both Japanese and English, then bio_sato1, ...2 and so on, for other people with that name. 
+      - label: Sort Order
+        name: weight
+        widget: number
+        hint: The sort order number starts at 1000, so you can enter larger numbers than that for specifying the order in which the bios are listed on the bios page. E.g. 1010, 1020, 1030, etc so that you can insert new bios in between existing ones.
       - label: Draft
         name: draft
         widget: boolean
