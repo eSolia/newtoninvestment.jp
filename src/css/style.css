@@ -7,7 +7,7 @@
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/noto-sans-jp-v52-japanese-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../assets/fonts/noto-sans-jp-v52-japanese-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* noto-sans-jp-600 - japanese */
@@ -16,7 +16,7 @@
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/noto-sans-jp-v52-japanese-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../assets/fonts/noto-sans-jp-v52-japanese-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 * {
@@ -1193,6 +1193,16 @@ a {
   font-size: 18px;
   font-weight: 400;
   gap: 4px;
+}
+#news a[target="_blank"]::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin-left: 5px;
+  background: url('./img/icon_arrow.svg') no-repeat 0 0;
 }
 #news + .link {
   margin-left: 45px;
