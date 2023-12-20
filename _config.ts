@@ -6,6 +6,7 @@ import sitemap from "lume/plugins/sitemap.ts";
 import decapCMS from "lume/plugins/decap_cms.ts";
 import date from "lume/plugins/date.ts";
 import filterPages from "lume/plugins/filter_pages.ts";
+import lightningcss from "lume/plugins/lightningcss.ts";
 
 import en from "npm:date-fns@2.30.0/locale/en-US/index.js";
 import ja from "npm:date-fns@2.30.0/locale/ja/index.js";
@@ -38,6 +39,7 @@ site.use(favicon({
   input: "assets/img/favicon.png",
 }));
 
+site.use(lightningcss());
 site.use(metas());
 site.use(filterPages({
   fn: (page) => !page.data.external_link,
