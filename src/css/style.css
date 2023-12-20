@@ -1201,7 +1201,7 @@ a {
   width: 20px;
   height: 20px;
   margin-left: 5px;
-  background: url('../assets/img/icon_arrow.svg') no-repeat 0 0;
+  background: url('../assets/img/icon_arrow_light.svg') no-repeat 0 0;
 }
 #news + .link {
   margin-left: 45px;
