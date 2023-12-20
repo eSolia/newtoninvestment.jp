@@ -8,6 +8,14 @@ description: "Before founding Newton Investment Partners, Hiroyuki Otsuka was
   Ltd.). "
 lang: en
 id: bio_otsuka
+
+ldPerson:
+  email: hotsuka@newtoninvestment.jp
+  alumniOf: Oxford University
+  nationality: Japanese
+  telephone: +81-3-4510-2987
+  fax: +81-3-4510-2988
+
 weight: 1000
 name: Hiroyuki Otsuka
 position: Representative Director and CEO

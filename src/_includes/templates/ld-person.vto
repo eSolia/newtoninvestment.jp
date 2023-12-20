@@ -1,0 +1,13 @@
+<script type="application/ld+json">
+{{ set fullUrl = url |> url(true) }}
+{{ set fullUrlImage = img |> url(true) }}
+{{- {
+   "@context": "https://schema.org",
+    "@type": "Person",
+    image: fullUrlImage,
+    jobTitle: position,
+    name: name,
+    url: fullUrl,
+    ...ldPerson
+} |> JSON.stringify -}}
+</script>
