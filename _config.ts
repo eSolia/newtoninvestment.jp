@@ -54,5 +54,6 @@ site.use(decapCMS({
 
 site.copy("assets");
 site.copy("humans.txt");
+site.copy("robots.txt");
 
 export default site;
