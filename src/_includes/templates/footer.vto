@@ -5,7 +5,7 @@
         <a class="menu-link" href="{{ item.url }}">{{ item.text }}</a>
       {{ /for }}
     </div>
-    <div class="copy">{{ footer.copy }}</div>
+    <div class="copy">{{ footer.copy }}. {{ "now" |> date("Y") }}</div>
   </div>
 </footer>
 
