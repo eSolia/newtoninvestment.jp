@@ -232,7 +232,7 @@ sup {
 
 .slick-next {
   background: #f0f;
-  background: url("/assets/img/btn_next.png") left top no-repeat;
+  background: url("../assets/img/btn_next.png") left top no-repeat;
   background-size: 25px 60px;
   margin-left: 0px;
   z-index: 1000;
@@ -240,7 +240,7 @@ sup {
 
 .slick-prev {
   background: #ff0;
-  background: url(/assets/img/btn_prev.png) left top no-repeat;
+  background: url("../assets/img/btn_prev.png") left top no-repeat;
   background-size: 25px 60px;
   margin-left: 0px;
   left: 0px;
@@ -1200,9 +1200,8 @@ a {
   vertical-align: middle;
   width: 20px;
   height: 20px;
-  position: absolute;
   margin-left: 5px;
-  background: url('./img/icon_arrow.svg') no-repeat 0 0;
+  background: url('../assets/img/icon_arrow.svg') no-repeat 0 0;
 }
 #news + .link {
   margin-left: 45px;
