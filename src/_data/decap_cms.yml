@@ -33,7 +33,7 @@ collections:
       - label: Page Title
         name: title
         widget: string
-        hint: As the page metadata title, enter the title of the news item, in the same language as the content.
+        hint: As the page metadata title, enter the title of the news item, in the same language as the content. Careful, this becomes the URL slug, so get it right the first time.
       - label: Page Description
         name: description
         widget: text
@@ -87,6 +87,23 @@ collections:
         name: description
         widget: text
         hint: As the page metadata description, enter a short description for the bio item in the same language as the content, to be used by search engines and social media.
+      - label: SEO InfoCard
+        name: ldPerson
+        widget: object
+        hint: These fields must be filled in for the bio item to appear in the Google search results as an InfoCard.
+        fields: 
+          - label: Alma Mater
+            name: alumniOf
+            widget: string
+            hint: Enter the person's alma mater, in the same language as the content.
+          - label: Email
+            name: email
+            widget: string
+            hint: Enter the person's email address.
+          - label: Nationality
+            name: nationality
+            widget: string
+            hint: Enter the person's nationality, in the same language as the content. 
       - label: Language
         name: lang
         widget: select
