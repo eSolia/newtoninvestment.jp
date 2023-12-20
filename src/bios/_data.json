@@ -1,6 +1,7 @@
 {
   "type": "bio",
   "layout": "layouts/bio.vto",
+  "priority": 0.9,
   "metas": {
     "image": "=img"
   }
