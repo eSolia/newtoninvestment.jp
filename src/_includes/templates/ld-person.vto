@@ -1,7 +1,9 @@
 <script type="application/ld+json">
 {{ set fullUrl = url |> url(true) }}
 {{ set fullUrlImage = img |> url(true) }}
-{{ set contactPointType = ldDefaults.contactPoint.contactType |> whathere }}
+{{ set contactPointType = ldDefaults.contactPoint.contactType }}
+{{ set worksForName = ldDefaults.worksFor.name }}
+{{ set worksForLegalName = ldDefaults.worksFor.legalName }}
 {{- {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -11,8 +13,8 @@
     url: fullUrl,
     worksFor: {
         "@type": "Organization",
-        name: "Newton Investment Partners",
-        legalName: "Newton Investment Partners Inc.",
+        name: worksForName,
+        legalName: worksForLegalName,
         foundingDate: "2023",
         "url": "https://newtoninvestment.jp",
         "logo": {
