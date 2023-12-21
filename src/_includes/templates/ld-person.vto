@@ -1,6 +1,7 @@
 <script type="application/ld+json">
 {{ set fullUrl = url |> url(true) }}
 {{ set fullUrlImage = img |> url(true) }}
+{{ set contactPointType = ldDefaults.contactPoint.contactType |> whathere }}
 {{- {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -22,7 +23,7 @@
         },
         "contactPoint": {
             "@type": "ContactPoint",
-            "contactType": "Inquiries",
+            "contactType": contactPointType,
             "telephone": "+81-3-4510-2987",
             "email": "contact@newtoninvestment.jp"
         },
