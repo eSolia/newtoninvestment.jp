@@ -1,16 +1,18 @@
 ---
 layout: ./base.vto
-containerClass: index
+containerClass: terms
 ---
 
-<div class="error">
-  <h1>{{ content.title }}</h1>
-
-  {{ content.description |> md }}
-
-  <a href="{{ '/' |> url }}">
+<section class="terms" id="terms">
+  <div class="inner">
+    <h2>{{ content.title }}</h2>
+    <div class="txt">
+      {{ content.description |> md }}
+    </div>
+    <a href="{{ '/' |> url }}">
     <button type="button" class="button is-primary is-big">
       {{ content.button.title }}
     </button>
   </a>
-</div>
+  </div>
+</section>
