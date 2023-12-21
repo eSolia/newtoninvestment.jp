@@ -96,10 +96,6 @@ collections:
             name: alumniOf
             widget: string
             hint: Enter the person's alma mater, in the same language as the content.
-          - label: Email
-            name: email
-            widget: string
-            hint: Enter the person's email address.
           - label: Nationality
             name: nationality
             widget: string
