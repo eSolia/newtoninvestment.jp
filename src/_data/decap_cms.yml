@@ -53,6 +53,7 @@ collections:
       - label: Tags
         name: tags
         widget: list
+        required: false
       - label: Draft
         name: draft
         widget: boolean
@@ -64,10 +65,12 @@ collections:
       - label: External Link
         name: external_link
         widget: string
+        required: false
         hint: If the news item is to be a link to an external site or PDF, enter the link here. The title of the news item will be used as the link text in the news list. 
       - label: News Content
         name: body
         widget: markdown
+        required: false
   - label: Bios
     name: bios
     description: Create or edit key member biographies here.
@@ -95,10 +98,12 @@ collections:
           - label: Alma Mater
             name: alumniOf
             widget: string
+            required: false
             hint: Enter the person's alma mater, in the same language as the content.
           - label: Nationality
             name: nationality
             widget: string
+            required: false
             hint: Enter the person's nationality, in the same language as the content. 
       - label: Language
         name: lang
