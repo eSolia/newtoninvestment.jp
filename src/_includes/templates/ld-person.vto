@@ -2,14 +2,30 @@
 {{ set fullUrl = url |> url(true) }}
 {{ set fullUrlImage = img |> url(true) }}
 {{- {
-   "@context": "https://schema.org",
+    "@context": "https://schema.org",
     "@type": "Person",
     image: fullUrlImage,
     jobTitle: position,
     name: name,
     url: fullUrl,
-    telephone: "+81-3-4510-2987",
+    worksFor: {
+        "@type": "Organization",
+        name: "Newton Investment Partners",
+        legalName: "Newton Investment Partners Inc.",
+        foundingDate: "2023",
+        "url": "https://newtoninvestment.jp"
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://newtoninvestment.jp/assets/img/ogp.png",
+            "width": 1200,
+            "height": 630
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Inquiries",
+            "telephone": "+81-3-4510-2987",
+            "email": "contact@newtoninvestment.jp"
+        },
     ...ldPerson
 } |> JSON.stringify -}}
 </script>
-
