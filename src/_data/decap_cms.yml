@@ -93,6 +93,7 @@ collections:
       - label: SEO InfoCard
         name: ldPerson
         widget: object
+        required: false
         hint: These fields must be filled in for the bio item to appear in the Google search results as an InfoCard.
         fields: 
           - label: Alma Mater
