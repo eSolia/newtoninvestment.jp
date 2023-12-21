@@ -16,4 +16,13 @@
     Referrer-Policy = "strict-origin"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     Permissions-Policy = "accelerometer=(), ambient-light-sensor=*, autoplay=(self), battery=(self), camera=(), cross-origin-isolated=*, fullscreen=*, geolocation=(self), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), usb=()"
-    
+
+[[redirects]]
+from = "/en/*"
+to = "/en/404.html"
+status = 404
+
+[[redirects]]
+from = "/*"
+to = "/404.html"
+status = 404

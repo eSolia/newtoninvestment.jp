@@ -1,0 +1,15 @@
+---
+layout: ./base.vto
+---
+
+<div class="error">
+  <h1>{{ content.title }}</h1>
+
+  {{ content.description |> md }}
+
+  <a href="{{ '/' |> url }}">
+    <button type="button" class="button is-primary is-big">
+      {{ content.button.title }}
+    </button>
+  </a>
+</div>
