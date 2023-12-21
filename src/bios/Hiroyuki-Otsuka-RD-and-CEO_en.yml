@@ -6,6 +6,9 @@ description: "Before founding Newton Investment Partners, Hiroyuki Otsuka was
   at several companies including Chimney Co., Ltd., Tsubaki Nakashima Co., Ltd,.
   CxS Corporation, and SENQCIA Corporation (formerly Hitachi Metals Techno,
   Ltd.). "
+ldPerson:
+  alumniOf: Oxford University
+  nationality: Japanese
 lang: en
 id: bio_otsuka
 weight: 1000
@@ -46,7 +49,5 @@ bio: >-
 
 
   Mr. Otsuka received his post-graduate degree from Oxford University and his BA from Waseda University.
-ldPerson:
-  alumniOf: Oxford University
-  nationality: Japanese
+
 
