@@ -19,8 +19,6 @@ menu:
     url: /news/
   - text: Bios
     url: /bios/
-  - text: CEO Message
-    url: /ceo/
   - text: Inquiries
     url: /#inquiries
 
@@ -67,8 +65,6 @@ en:
       url: /en/news/
     - text: Bios
       url: /en/bios/
-    - text: CEO Message
-      url: /en/ceo/
     - text: Inquiries
       url: /en/#inquiries
 
