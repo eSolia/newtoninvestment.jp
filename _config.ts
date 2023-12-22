@@ -9,6 +9,7 @@ import filterPages from "lume/plugins/filter_pages.ts";
 import lightningcss from "lume/plugins/lightningcss.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 import picture from "lume/plugins/picture.ts";
+import pagefind from "lume/plugins/pagefind.ts";
 
 import en from "npm:date-fns@2.30.0/locale/en-US/index.js";
 import ja from "npm:date-fns@2.30.0/locale/ja/index.js";
@@ -39,6 +40,7 @@ site.use(multilanguage({
 
 site.use(picture());
 site.use(transformImages());
+site.use(pagefind());
 
 site.use(favicon({
   input: "assets/img/favicon.png",
@@ -56,7 +58,7 @@ site.use(sitemap({
 
 site.use(decapCMS({
   identity: "netlify",
-  path: "/6E77746E/"
+  path: "/6E77746E/",
 }));
 
 site.copy("assets");
