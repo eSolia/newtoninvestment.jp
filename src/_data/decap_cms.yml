@@ -6,8 +6,8 @@ site_url: https://lume--newtoninvestment-jp.netlify.app/
 display_url: https://lume--newtoninvestment-jp.netlify.app/
 logo_url: https://lume--newtoninvestment-jp.netlify.app/assets/img/ogp.png
 
-media_folder: /src/assets/media
-public_folder: /assets/media
+media_folder: /src/media
+public_folder: /media
 
 publish_mode: editorial_workflow
 

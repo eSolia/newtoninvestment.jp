@@ -7,6 +7,8 @@ import decapCMS from "lume/plugins/decap_cms.ts";
 import date from "lume/plugins/date.ts";
 import filterPages from "lume/plugins/filter_pages.ts";
 import lightningcss from "lume/plugins/lightningcss.ts";
+import transformImages from "lume/plugins/transform_images.ts";
+import picture from "lume/plugins/picture.ts";
 
 import en from "npm:date-fns@2.30.0/locale/en-US/index.js";
 import ja from "npm:date-fns@2.30.0/locale/ja/index.js";
@@ -34,6 +36,9 @@ site.use(multilanguage({
   languages: ["en", "ja"],
   defaultLanguage: "ja",
 }));
+
+site.use(picture());
+site.use(transformImages());
 
 site.use(favicon({
   input: "assets/img/favicon.png",

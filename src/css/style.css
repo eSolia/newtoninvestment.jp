@@ -1246,6 +1246,7 @@ a {
   aspect-ratio: 1;
   object-fit: cover;
   height: auto;
+  max-width: 100%;
 }
 .txt.from-markdown p + p {
   margin-top: 1em;
