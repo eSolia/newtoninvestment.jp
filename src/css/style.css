@@ -43,6 +43,9 @@ time, mark, audio, video {
   vertical-align: baseline;
   background: transparent; }
 
+html {
+  background-color: #121250; }
+
 body {
   line-height: 1; }
 
