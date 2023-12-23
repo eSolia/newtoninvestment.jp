@@ -1288,3 +1288,30 @@ a {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+.index .content {
+  padding-top: 100px;
+}
+.index .content section.kv {
+  padding: 0;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.index .content section.lead {
+  height: 330px;
+  margin-bottom: 90px;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1301px) {
+  .index .content section.kv {
+    height: 370px;
+  }
+  .index .content section.lead {
+    height: 500px;
+  }
+}
