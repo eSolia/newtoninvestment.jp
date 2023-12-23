@@ -80,7 +80,7 @@ company: |
       <div class="body">
         <a href="/en/ceo.html">
           <div class="label">Hiroyuki Otsuka</div>
-          <div class="icon"><img src="/assets/img/icon_arrow.svg"></div>
+          <div class="icon"><img src="/assets/img/icon_arrow.svg" alt="Right-facing arrow icon indicating a link to another page."></div>
         </a>
       </div>
     </div>
@@ -97,7 +97,7 @@ company: |
       <div class="body">
         <a href="mailto:contact@newtoninvestment.jp">
           <div class="label">contact@newtoninvestment.jp</div>
-          <div class="icon"><img src="/assets/img/icon_arrow.svg"></div>
+          <div class="icon"><img src="/assets/img/icon_arrow.svg" alt="Right-facing arrow icon indicating a link to another page."></div>
         </a>
       </div>
     </div>
@@ -118,7 +118,7 @@ inquiries: |
       <div class="body">
         <a href="mailto:NewtonInvestment@kekstcnc.com">
           <div class="label">NewtonInvestment@kekstcnc.com</div>
-          <div class="icon"><img src="/assets/img/icon_arrow.svg"></div>
+          <div class="icon"><img src="/assets/img/icon_arrow.svg" alt="Right-facing arrow icon indicating a link to another page."></div>
         </a>
       </div>
     </div>
