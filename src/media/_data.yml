@@ -1,0 +1,10 @@
+transformImages:
+  - resize: [200, null]
+    suffix: -200px
+    format: [webp, jpg, avif]
+  - resize: [600, null]
+    suffix: -600px
+    format: [webp, jpg, avif]
+  - resize: [1000, null]
+    suffix: -1000px
+    format: [webp, jpg, avif]
