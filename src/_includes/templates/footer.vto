@@ -2,7 +2,7 @@
   <div class="inner">
     <div class="links">
       {{ for item of footer.links }}
-        <a class="menu-link" href="{{ item.url }}">{{ item.text }}</a>
+        <a class="menu-link" href="{{ item.url }}" aria-label="Nav link in footer">{{ item.text }}</a>
       {{ /for }}
     </div>
     <div class="copy">©{{ "now" |> date("Y") }} {{ footer.copy }} </div>

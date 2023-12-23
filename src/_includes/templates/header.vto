@@ -1,14 +1,14 @@
 <header>
   <div class="inner">
     <div class="logo">
-      <a href="{{ lang === 'ja' ? '/' : '/en/' }}">
+      <a href="{{ lang === 'ja' ? '/' : '/en/' }}" aria-label="Logo linking to home page">
         <img class="logo_b" src="/assets/img/logo_b.svg" alt="Logo for Newton Investment Partners, Inc. in svg format.">
       </a>
     </div>
     <menu class="main">
       <ul>
         {{ for item of menu }}
-          <li><a class="menu-link" href="{{ item.url }}">{{ item.text }}</a></li>
+          <li><a class="menu-link" href="{{ item.url }}" aria-label="Top nav menu link">{{ item.text }}</a></li>
         {{ /for }}
       </ul>
     </menu>
@@ -27,7 +27,7 @@
   </div>
 </header>
 
-<a class="btn-menu is-sp" href="javascript:void(0);">
+<a class="btn-menu is-sp" href="javascript:void(0);" aria-label="Menu">
   <div class="icon">
     <span></span>
     <span></span>
