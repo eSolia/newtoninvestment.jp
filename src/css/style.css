@@ -1277,3 +1277,14 @@ a {
   font-weight: 500;
   font-size: 1.5rem;
 }
+.txt-center {
+  text-align: center;
+}
+.txt-center a {
+  font-weight: bold;
+}
+.txt a {
+  color: #00236d;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

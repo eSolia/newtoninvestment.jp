@@ -9,10 +9,10 @@ containerClass: terms
     <div class="txt">
       {{ content.description |> md }}
     </div>
-    <a href="{{ '/' |> url }}">
-    <button type="button" class="button is-primary is-big">
-      {{ content.button.title }}
-    </button>
-  </a>
+    <nav class="txt-center">
+      <a href="{{ content.button.url }}" class="link">
+        {{ content.button.title }}
+      </a>
+    </nav>
   </div>
 </section>

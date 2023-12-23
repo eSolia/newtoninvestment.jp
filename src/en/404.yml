@@ -10,3 +10,4 @@ content:
   description: We're sorry, the page you attempted to access could not be found. The address may be incorrect or the page may have been moved. Consider trying our [search page](/en/search/).
   button:
     title: Return Home
+    url: /en/
