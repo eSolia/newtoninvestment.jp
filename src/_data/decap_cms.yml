@@ -142,7 +142,7 @@ collections:
       - label: Image
         name: img
         widget: image
-        hint: Upload the featured image of the person, a square "head shot", with the dimensions of 1920x1920 pixels. The system will automatically resize it for use in the site.
+        hint: Upload the featured image of the person, a square "head shot", with a width of at least 2000 pixels, and a name like "Hiroyuki-Otsuka-square.JPG". The system will automatically resize it for use in the site.
       - label: Content
         name: bio
         widget: markdown
