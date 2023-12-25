@@ -54,6 +54,8 @@ site.use(sitemap({
   priority: "priority",
 }));
 
+// site.loadPages([".tmpl.js"]);
+
 site.use(decapCMS({
   identity: "netlify",
   path: "/6E77746E/",
