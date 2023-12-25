@@ -147,3 +147,49 @@ collections:
         name: bio
         widget: markdown
         hint: Enter the person's biography, in the same language as the content.
+  - label: Pages
+    name: pages
+    create: false
+    files: 
+      - label: "CEO Message"
+        name: ceo-message-en
+        file: src/en/ceo-message.md
+        fields: 
+          - label: Page Title
+            name: title
+            widget: string
+            hint: Enter the title of the page, in the same language as the content. This appears on the page above the bold title, as well as in the browser tab.
+          - label: Page Bold Name
+            name: name
+            widget: string
+            hint: Enter the text for the bold title on the page, in the same language as the content.
+          - label: Image
+            name: img
+            widget: image
+            hint: Upload the featured image of the person, in portrait format with a width of at least 2000 pixels, and a name like "Hiroyuki-Otsuka-original.JPG". The system will automatically resize it for use in the site.
+          - label: Content
+            name: body
+            widget: markdown
+            required: false
+            hint: Enter the content of the page. 
+      - label: "代表取締役社長ご挨拶"
+        name: ceo-message-ja
+        file: src/ceo-message.md
+        fields: 
+          - label: Page Title
+            name: title
+            widget: string
+            hint: Enter the title of the page, in the same language as the content. This appears on the page above the bold title, as well as in the browser tab.
+          - label: Page Bold Name
+            name: name
+            widget: string
+            hint: Enter the text for the bold title on the page, in the same language as the content.
+          - label: Image
+            name: img
+            widget: image
+            hint: Upload the featured image of the person, in portrait format with a width of at least 2000 pixels, and a name like "Hiroyuki-Otsuka-original.JPG". The system will automatically resize it for use in the site.
+          - label: Content
+            name: body
+            widget: markdown
+            required: false
+            hint: Enter the content of the page. 
