@@ -1,0 +1,3 @@
+# redirect ceo to ceo-message due to content being in new bios section
+/ceo      /ceo-message      301
+/en/ceo   /en/ceo-message   301

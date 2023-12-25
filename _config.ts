@@ -64,5 +64,6 @@ site.use(decapCMS({
 site.copy("assets");
 site.copy("humans.txt");
 site.copy("robots.txt");
+site.copy("_redirects");
 
 export default site;
