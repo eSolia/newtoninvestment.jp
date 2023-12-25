@@ -4,6 +4,7 @@ metas:
   title: =title
   description: =description
   image: /assets/img/ogp.png
+  icon: /assets/img/favicon.png
   site: =site.title
   generator: true
 
