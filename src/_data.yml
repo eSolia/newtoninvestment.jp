@@ -5,6 +5,7 @@ metas:
   description: =description
   image: /assets/img/ogp.png
   site: =site.title
+  generator: true
 
 menu:
   - text: Mission
