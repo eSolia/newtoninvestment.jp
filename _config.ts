@@ -42,9 +42,7 @@ site.use(picture());
 site.use(transformImages());
 site.use(pagefind());
 
-site.use(favicon({
-  input: "assets/img/favicon.png",
-}));
+site.use(favicon());
 
 site.use(lightningcss());
 site.use(metas());
@@ -65,5 +63,6 @@ site.copy("assets");
 site.copy("humans.txt");
 site.copy("robots.txt");
 site.copy("_redirects");
+site.copy("favicon.svg");
 
 export default site;
