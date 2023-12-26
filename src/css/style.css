@@ -1315,3 +1315,21 @@ a {
     height: 500px;
   }
 }
+.message-photo img {
+  @media (max-width: 449px) {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center top;
+    margin: 0 auto 2em;
+    display: block;
+  }
+
+  @media (min-width: 450px) {
+    float: right;
+    margin: 0 0 1em 2em;
+    max-width: 40%;
+  }
+  @media (min-width: 1301px) {
+    margin: 0 0 2em 3em;
+  }
+}
