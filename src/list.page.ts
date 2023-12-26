@@ -1,5 +1,5 @@
 export const url = "/list.html";
-export const title = "全ファイル一覧";
+export const title = "全ソースファイル一覧";
 export const lang = "ja";
 export const id = "pagelister";
 export const layout = "layouts/terms.vto";
