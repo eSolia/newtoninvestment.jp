@@ -50,7 +50,7 @@ containerClass: index
       <ul class="news-list" id="news">
         {{ for item of search.pages(`type=news lang=${lang}`, "date=desc", 10) }}
         <li>
-          <time>{{ item.date |> date(undefined, lang) }}</time>
+          <time class="txt-bl"><strong>{{ item.date |> date(undefined, lang) }}</strong></time>
           {{ if item.external_link }}
             <p><a href="{{ item.external_link }}" target="_blank">{{ item.title }}</a></p>
           {{ else }}
