@@ -3,7 +3,7 @@
   command = """
     curl -fsSL https://deno.land/x/install/install.sh | sh && \
     /opt/buildhome/.deno/bin/deno task build && \
-    tree _site > _site/list-generated-files.txt
+    tree _site > _site/list-generated-file-tree.txt
   """
 
 [[headers]]
