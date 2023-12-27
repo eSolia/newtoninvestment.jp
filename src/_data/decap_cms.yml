@@ -30,14 +30,14 @@ collections:
     slug: "{{year}}{{month}}{{day}}_{{title}}_{{lang}}"
     sortable_fields: ['commit_date', 'title', 'commit_author', 'lang', 'id']
     fields:
-      - label: Page Title
+      - label: News Title
         name: title
         widget: string
-        hint: As the page metadata title, enter the title of the news item, in the same language as the content. Careful, this becomes the URL slug, so get it right the first time.
-      - label: Page Description
+        hint: As the news page's metadata title, enter the title of the news item, in the same language as the content. Careful, this becomes the URL slug, so get it right the first time.
+      - label: News Description
         name: description
         widget: text
-        hint: As the page metadata description, enter a short description for the news post in the same language as the content, to be used by search engines and social media.
+        hint: As the news page's metadata description, enter a short description for the news post in the same language as the content, to be used by search engines and social media.
       - label: Language
         name: lang
         widget: select
@@ -67,6 +67,11 @@ collections:
         widget: string
         required: false
         hint: If the news item is to be a link to an external site or PDF, enter the link here. The title of the news item will be used as the link text in the news list. 
+      - label: Featured Image
+        name: img
+        widget: image
+        default: /assets/img/ogp.png
+        hint: Upload the featured image for the news post (defaults to the logo). The system will automatically resize it for use in the site.
       - label: News Content
         name: body
         widget: markdown
