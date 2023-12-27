@@ -69,7 +69,8 @@ site.copy("favicon.svg");
 
 // Create zip and tree scripts
 site.script("zipsite", "zip -r _site/nwtn_site.zip _site");
-site.script("maketree", "cd _site && tree -H . -L 3 --noreport --charset utf-8 -o nwtn_tree.html");
+site.script("maketree", "cd _site && tree -H . -L 5 --noreport --charset utf-8 -o nwtn_tree.html");
+// Execute scripts after build
 site.addEventListener("afterBuild", "zipsite");
 site.addEventListener("afterBuild", "maketree");
 
