@@ -1,4 +1,4 @@
-export const url = "/nwtn-file-index.html";
+export const url = "/nwtn_index.html";
 export const title = "全ソースファイル一覧";
 export const lang = "ja";
 export const id = "pagelister";
