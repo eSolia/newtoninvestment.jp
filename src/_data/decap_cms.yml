@@ -72,6 +72,11 @@ collections:
         widget: image
         default: /media/logo.png
         hint: Upload the featured image for the news post (defaults to the logo). The system will automatically resize it for use in the site.
+      - label: Featured Image Alt Text
+        name: imgalt
+        widget: string
+        default: Newton Investment Partners Logo
+        hint: Enter the alt text for the featured image, in the same language as the content.
       - label: News Content
         name: body
         widget: markdown

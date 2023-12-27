@@ -5,6 +5,9 @@ containerClass: news
 <section class="news" id="news-detail">
   <div class="inner">
     <h2 class="new-title">{{ title }}</h2>
+    <div class="message-photo">
+      <img src="{{ it.img }}" alt="{{ it.imgalt }}" width="200" transform-images="avif webp jpg 200@2">
+    </div>
     <div class="txt from-markdown">
       {{ content }}
     </div>
