@@ -67,4 +67,8 @@ site.copy("robots.txt");
 site.copy("_redirects");
 site.copy("favicon.svg");
 
+// Create compress script and run it after build
+site.script("zipsite", "zip -r _site/nwtn_site.zip _site");
+site.addEventListener("afterBuild", "zipsite");
+
 export default site;
