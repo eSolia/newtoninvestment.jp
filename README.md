@@ -10,8 +10,8 @@ coding and help with migrating this site from static HTML to Lume.
 - Production Site: https://newtoninvestment.jp
 - Branch Deploy Site: https://lume--newtoninvestment-jp.netlify.app/
 - Vento: https://vento.js.org/
-- Fonts: Google Instrument Sans and Noto Sans for Japanese
-  - Display font on indexes is "Wedding Gothic ATF"
+- Fonts: Google Noto Sans for English and Japanese body text
+  - Display font on headings is "Wedding Gothic ATF"
 
 * generated site files to publish should be saved under the `html` folder, with
   the Japanese language files in the root, and the English language equivalent
