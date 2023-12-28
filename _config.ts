@@ -39,7 +39,9 @@ site.use(multilanguage({
 }));
 
 site.use(picture());
-site.use(transformImages());
+site.use(transformImages({
+  cache: false, // Disable cache
+}));
 site.use(pagefind());
 
 site.use(favicon());
