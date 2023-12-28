@@ -8,7 +8,7 @@ metas:
   title: CEO Message | NEWTON INVESTMENT PARTNERS
   description: Message from Hiroyuki Otsuka, CEO of Newton Investment Partners
 containerClass: ceo
-img: /media/hiroyuki-otsuka-original.jpg
+img: /media/HOtsuka_2785.jpg
 imgalt: Portrait image of Hiroyuki Otsuka R.D. and CEO
 ---
 
