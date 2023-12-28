@@ -1239,6 +1239,7 @@ a {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 3%;
 }
 .bio-view-header {
   text-align: center;
@@ -1250,6 +1251,7 @@ a {
   object-fit: cover;
   height: auto;
   max-width: 100%;
+  border-radius: 1%;
 }
 .txt.from-markdown p + p {
   margin-top: 1em;
@@ -1322,14 +1324,20 @@ a {
     object-position: center top;
     margin: 0 auto 2em;
     display: block;
+    border-radius: 2%;
+    border: 1px solid lavender;
   }
 
   @media (min-width: 450px) {
     float: right;
     margin: 0 0 1em 2em;
     max-width: 40%;
+    border-radius: 2%;
+    border: 1px solid lavender;
   }
   @media (min-width: 1301px) {
     margin: 0 0 2em 3em;
+    border-radius: 2%;
+    border: 1px solid lavender;
   }
 }
