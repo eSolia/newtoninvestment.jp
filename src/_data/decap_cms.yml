@@ -203,3 +203,11 @@ collections:
             widget: markdown
             required: false
             hint: Enter the content of the page. 
+      - label: "Redirects"
+        name: netlify-redirects
+        file: src/_redirects
+        fields: 
+          - label: Redirects
+            name: content
+            widget: text
+            hint: asdf
