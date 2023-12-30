@@ -208,6 +208,6 @@ collections:
         file: src/_redirects
         fields: 
           - label: Redirects
-            name: content
+            name: body
             widget: text
             hint: asdf
