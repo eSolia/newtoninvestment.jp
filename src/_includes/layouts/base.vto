@@ -28,9 +28,6 @@
     {{ include "templates/ld-person.vto" }}
   {{ /if }}
   
-  {{ if it.url == "/" }}
-  　{{ include "templates/netlify-identity-widget.vto" }}
-  {{ /if }}
 </head>
 <body>
   <div class="container {{ it.containerClass }}">
@@ -42,9 +39,7 @@
   </div>
 
   {{ include "templates/footer.vto" }}
-  {{ if it.url == "/" }}
-  {{ include "templates/netlify-redirect.vto" }}
-  {{ /if }}
+
   {{ include "templates/fathom-menu-track.vto"}}
 </body>
 </html>
