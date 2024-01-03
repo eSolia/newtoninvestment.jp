@@ -12,4 +12,4 @@ coding and help with migrating this site from static HTML to Lume.
 - Help Site: https://help.newtoninvestment.jp 
 - Fonts: Google Noto Sans for English and Japanese body text
   - Display font on headings is Adobe "Wedding Gothic ATF" 
-- Editing: client can use decapCMS to edit News and Bio items, as well as CEO greeting message. 
+- Editing: client can use decapCMS to edit News and Bio items, as well as CEO greeting message 
