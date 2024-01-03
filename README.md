@@ -11,5 +11,5 @@ coding and help with migrating this site from static HTML to Lume.
 - Branch Deploy Site: https://lume--newtoninvestment-jp.netlify.app/
 - Help Site: https://help.newtoninvestment.jp 
 - Fonts: Google Noto Sans for English and Japanese body text
-  - Display font on headings is "Wedding Gothic ATF"
-- Client Editing: client can use decapCMS to edit News and Bio items, as well as CEO greeting message. 
+  - Display font on headings is Adobe "Wedding Gothic ATF" 
+- Editing: client can use decapCMS to edit News and Bio items, as well as CEO greeting message. 
