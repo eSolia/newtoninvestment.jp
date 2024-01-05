@@ -1,0 +1,6 @@
+layout: layouts/bios.vto
+id: team
+title: Team
+metas:
+  title: Team Member Biographies
+  description: Our executive team member biographies.

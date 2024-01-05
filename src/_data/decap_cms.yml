@@ -23,7 +23,7 @@ collections:
     name: news
     description: Create or edit news items here. 
     folder: src/news
-    preview_path: news/{{slug}}/
+    preview_path: {{lang}}/news/{{slug}}/
     extension: md
     create: true
     view_filter: draft
@@ -81,11 +81,11 @@ collections:
         name: body
         widget: markdown
         required: false
-  - label: Bios
-    name: bios
-    description: Create or edit key member biographies here.
-    folder: src/bios
-    preview_path: bios/{{slug}}/
+  - label: Team
+    name: team
+    description: Create or edit key team member biographies here.
+    folder: src/team
+    preview_path: {{lang}}/team/{{slug}}/
     extension: yml
     create: true
     view_filter: draft
@@ -99,12 +99,12 @@ collections:
       - label: Page Description
         name: description
         widget: text
-        hint: As the page metadata description, enter a short description for the bio item in the same language as the content, to be used by search engines and social media.
+        hint: As the page metadata description, enter a short description for the team biography item in the same language as the content, to be used by search engines and social media.
       - label: SEO InfoCard
         name: ldPerson
         widget: object
         required: false
-        hint: These fields must be filled in for the bio item to appear in the Google search results as an InfoCard.
+        hint: These fields must be filled in for the team bio item to appear in the Google search results as an InfoCard.
         fields: 
           - label: Alma Mater
             name: alumniOf
@@ -132,7 +132,7 @@ collections:
       - label: Sort Order
         name: weight
         widget: number
-        hint: The sort order number starts at 1000, so you can enter larger numbers than that for specifying the order in which the bios are listed on the bios page. E.g. 1010, 1020, 1030, etc so that you can insert new bios in between existing ones.
+        hint: The sort order number starts at 1000, so you can enter larger numbers than that for specifying the order in which the team bios are listed on the team bios page. E.g. 1010, 1020, 1030, etc so that you can insert new team bios in between existing ones.
       - label: Draft
         name: draft
         widget: boolean
