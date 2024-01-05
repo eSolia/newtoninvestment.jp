@@ -40,7 +40,7 @@ site.use(multilanguage({
 
 site.use(picture());
 site.use(transformImages({
-  cache: false, // Disable cache
+  cache: true, // Toggle cache
 }));
 site.use(pagefind());
 
