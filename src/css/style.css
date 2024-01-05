@@ -1214,10 +1214,21 @@ a {
   margin-left: 45px;
 }
 
+.container.bios .content {
+  max-width: 900px;
+}
+
 #bios-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+  @media (min-width: 500px) {
+    column-gap: 20px;
+    row-gap: 50px;
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: space-around;
+  }
 }
+
 #bio {
   _border: solid 1px #00236D;
 }
@@ -1226,10 +1237,25 @@ a {
 }
 .bio-header {
   display: grid;
-  grid-template-columns: min(200px, 33%) 1fr;
   gap: 1em;
   align-items: center;
   color: #00236D;
+
+  @media (max-width: 499px) {
+    grid-template-columns: min(200px, 33%) 1fr;
+  }
+  @media (min-width: 500px) {
+    text-align: center;
+  }
+}
+.bios-update {
+  grid-column: 1 / -1;
+  text-align: right;
+
+  @media (max-width: 499px) {
+    margin-bottom: 40px;
+    text-align: center;
+  }
 }
 .bio-header h3 {
   font-size: 20px;

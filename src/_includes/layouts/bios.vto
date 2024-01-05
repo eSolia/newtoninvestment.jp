@@ -6,8 +6,10 @@ containerClass: bios
   <div class="inner">
     <h2 class="new-title">{{ title }}</h2>
   </div>
-
   <ul id="bios-list">
+    <li class="bios-update">
+      <time>{{ displaydate }}</time>
+    </li>
     {{ for item of search.pages(`type=bio lang=${lang}`, "weight") }}
     <li>
       <article id="bio">
@@ -23,6 +25,4 @@ containerClass: bios
     </li>
     {{ /for }}
   </ul>
-
-  <time class="txt-bl"><strong>{{ displaydate }}</strong></time>
 </section>
