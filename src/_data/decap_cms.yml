@@ -203,3 +203,27 @@ collections:
             widget: markdown
             required: false
             hint: Enter the content of the page. 
+      - label: "Team List"
+        name: team-list-en
+        file: src/en/team.yml
+        fields: 
+          - label: Page Title
+            name: title
+            widget: string
+            hint: Enter the title of the page, in the same language as the content. This appears as the bold title, as well as in the browser tab.
+          - label: Display Date
+            name: displaydate
+            widget: string
+            hint: Enter the update date to be displayed on the page, in the same language as the content.
+      - label: "チーム紹介"
+        name: team-list-ja
+        file: src/team.yml
+        fields: 
+          - label: Page Title
+            name: title
+            widget: string
+            hint: Enter the title of the page, in the same language as the content. This appears as the bold title, as well as in the browser tab.
+          - label: Display Date
+            name: displaydate
+            widget: string
+            hint: Enter the update date to be displayed on the page, in the same language as the content.
