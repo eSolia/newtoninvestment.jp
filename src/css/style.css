@@ -521,7 +521,7 @@ a {
           display: block;
           width: 6px;
           height: 1px;
-          background: #00236D;
+          /* background: #00236D; */
           position: absolute;
           bottom: -30px;
           left: 50%;
