@@ -23,7 +23,7 @@ collections:
     name: news
     description: Create or edit news items here. 
     folder: src/news
-    preview_path: {{lang}}/news/{{slug}}/
+    preview_path: news/{{slug}}/
     extension: md
     create: true
     view_filter: draft
@@ -85,7 +85,7 @@ collections:
     name: team
     description: Create or edit key team member biographies here.
     folder: src/team
-    preview_path: {{lang}}/team/{{slug}}/
+    preview_path: team/{{slug}}/
     extension: yml
     create: true
     view_filter: draft
