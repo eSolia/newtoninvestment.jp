@@ -1,5 +1,5 @@
 ---
-title: New Site Launch
+title: New Website Launch
 description: Newton Investment Partners New Website Launch!
 lang: en
 id: 20231030A
