@@ -9,4 +9,4 @@ date: 2023-10-30T00:30:27.166Z
 img: /media/20231030-launch-screenshot.png
 imgalt: Newton Investment Partners 30 Oct 2023 Site Screenshot
 ---
-Newton Investment Partners is pleased to announce our new website, has launched on 30 Oct 2023.
+Newton Investment Partners is pleased to announce that our [new website](https://newtoninvestment.jp) has launched on 30 Oct 2023.
