@@ -19,7 +19,7 @@ menu:
     url: /#company
   - text: News
     url: /news/
-  - text: Team
+  - text: Our People
     url: /team/
   - text: Inquiries
     url: /#inquiries
@@ -65,7 +65,7 @@ en:
       url: /en/#company
     - text: News
       url: /en/news/
-    - text: Team
+    - text: Our People
       url: /en/team/
     - text: Inquiries
       url: /en/#inquiries
