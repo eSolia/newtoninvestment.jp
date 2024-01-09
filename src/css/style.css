@@ -1281,6 +1281,9 @@ a {
   max-width: 100%;
   border-radius: 1%;
 }
+.bio-view-header h3 {
+  font-size: 20px;
+}
 .txt.from-markdown p + p {
   margin-top: 1em;
 }
