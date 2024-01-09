@@ -1,0 +1,35 @@
+---
+layout: ./base.vto
+containerClass: news
+---
+<section class="news">
+  <div class="inner">
+    <h2 class="new-title">{{ title }}</h2>
+
+    <ul class="news-list" id="news">
+      {{ for item of results }}
+      <li>
+        <time>{{ item.date |> date(undefined, lang) }}</time>
+        {{ if item.external_link }}
+          <p><a href="{{ item.external_link }}" target="_blank">{{ item.title }}</a></p>
+        {{ else }}
+          <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+        {{ /if }}
+      </li>
+      {{ /for }}
+    </ul>
+
+    {{ if pagination.previous }}
+      <a class="link" href="{{ pagination.previous }}">
+        Previous page
+      </a>
+    {{ /if }}
+
+    {{ if pagination.next }}
+      <a class="link" href="{{ pagination.next }}">
+        Next page
+        <div class="icon" role="image" aria-label="Right-facing arrow icon indicating a link to another page."><img src="/assets/img/icon_arrow.svg" alt="Right-facing arrow icon indicating a link to another page."></div>
+      </a>
+    {{ /if }}
+  </div>
+</section>

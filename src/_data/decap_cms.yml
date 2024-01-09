@@ -1,0 +1,229 @@
+backend:
+  name: git-gateway
+  branch: main
+
+site_url: https://newtoninvestment.jp/
+display_url: https://newtoninvestment.jp/
+logo_url: https://newtoninvestment.jp/assets/img/ogp.png
+
+media_folder: /src/media
+public_folder: /media
+
+publish_mode: editorial_workflow
+
+show_preview_links: true
+
+slug: 
+  encoding: unicode
+  clean_accents: true
+  sanitize_replacement: '-'
+
+collections:
+  - label: News
+    name: news
+    description: Create or edit news items here. 
+    folder: src/news
+    preview_path: news/{{slug}}/
+    extension: md
+    create: true
+    view_filter: draft
+    slug: "{{year}}{{month}}{{day}}_{{title}}_{{lang}}"
+    sortable_fields: ['commit_date', 'title', 'commit_author', 'lang', 'id']
+    fields:
+      - label: News Title
+        name: title
+        widget: string
+        hint: As the news page's metadata title, enter the title of the news item, in the same language as the content. Careful, this becomes the URL slug, so get it right the first time.
+      - label: News Description
+        name: description
+        widget: text
+        hint: As the news page's metadata description, enter a short description for the news post in the same language as the content, to be used by search engines and social media.
+      - label: Language
+        name: lang
+        widget: select
+        default: ja
+        options:
+          - { label: 日本語, value: ja }
+          - { label: English, value: en }
+      - label: Id
+        name: id
+        widget: string
+        default: YYYYMMDDA
+        hint: This links the languages of a news item, so use e.g. 20231215A for both Japanese and English, then 20231215B, ...C, etc, for subsequent news items on that day.  
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+      - label: Draft
+        name: draft
+        widget: boolean
+        required: false
+      - label: Date
+        name: date
+        widget: datetime
+        hint: Enter the date of the news item.
+      - label: External Link
+        name: external_link
+        widget: string
+        required: false
+        hint: If the news item is to be a link to an external site or PDF, enter the link here. The title of the news item will be used as the link text in the news list. 
+      - label: Featured Image
+        name: img
+        widget: image
+        default: /media/logo.png
+        hint: Upload the featured image for the news post (defaults to the logo). The system will automatically resize it for use in the site.
+      - label: Featured Image Alt Text
+        name: imgalt
+        widget: string
+        default: Newton Investment Partners Logo
+        hint: Enter the alt text for the featured image, in the same language as the content.
+      - label: News Content
+        name: body
+        widget: markdown
+        required: false
+  - label: Team
+    name: team
+    description: Create or edit key team member biographies here.
+    folder: src/team
+    preview_path: team/{{slug}}/
+    extension: yml
+    create: true
+    view_filter: draft
+    slug: "{{title}}_{{lang}}"
+    sortable_fields: ['commit_date', 'title', 'commit_author', 'weight', 'lang', 'id']
+    fields:
+      - label: Page Title
+        name: title
+        widget: string
+        hint: As the page metadata title, enter the person's name and job title, separated by a comma, in the same language as the content. 
+      - label: Page Description
+        name: description
+        widget: text
+        hint: As the page metadata description, enter a short description for the team biography item in the same language as the content, to be used by search engines and social media.
+      - label: SEO InfoCard
+        name: ldPerson
+        widget: object
+        required: false
+        hint: These fields must be filled in for the team bio item to appear in the Google search results as an InfoCard.
+        fields: 
+          - label: Alma Mater
+            name: alumniOf
+            widget: string
+            required: false
+            hint: Enter the person's alma mater, in the same language as the content.
+          - label: Nationality
+            name: nationality
+            widget: string
+            required: false
+            hint: Enter the person's nationality, in the same language as the content. 
+      - label: Language
+        name: lang
+        widget: select
+        default: ja
+        hint: Enter the language of the content.
+        options:
+          - { label: 日本語, value: ja }
+          - { label: English, value: en }
+      - label: Id
+        name: id
+        widget: string
+        default: bio_person
+        hint: This links the languages of a bio item, so use e.g. bio_sato for both Japanese and English, then bio_sato1, ...2 and so on, for other people with that name. 
+      - label: Sort Order
+        name: weight
+        widget: number
+        hint: The sort order number starts at 1000, so you can enter larger numbers than that for specifying the order in which the team bios are listed on the team bios page. E.g. 1010, 1020, 1030, etc so that you can insert new team bios in between existing ones.
+      - label: Draft
+        name: draft
+        widget: boolean
+        required: false
+      - label: Full Name
+        name: name
+        widget: string
+        hint: Enter the person's full name, in the same language as the content.
+      - label: Position
+        name: position
+        widget: string
+        hint: Enter the person's job title, in the same language as the content.
+      - label: Short Introduction
+        name: short
+        widget: text
+        hint: Enter a short biographical sentence about the person. 
+      - label: Image
+        name: img
+        widget: image
+        hint: Upload the featured image of the person, a square "head shot", with a width of at least 2000 pixels, and a name like "Hiroyuki-Otsuka-square.JPG". The system will automatically resize it for use in the site.
+      - label: Content
+        name: bio
+        widget: markdown
+        hint: Enter the person's biography, in the same language as the content.
+  - label: Pages
+    name: pages
+    create: false
+    files: 
+      - label: "CEO Message"
+        name: ceo-message-en
+        file: src/en/ceo-message.md
+        fields: 
+          - label: Page Title
+            name: title
+            widget: string
+            hint: Enter the title of the page, in the same language as the content. This appears on the page above the bold title, as well as in the browser tab.
+          - label: Page Bold Name
+            name: name
+            widget: string
+            hint: Enter the text for the bold title on the page, in the same language as the content.
+          - label: Image
+            name: img
+            widget: image
+            hint: Upload the featured image of the person, in portrait format with a width of at least 2000 pixels, and a name like "Hiroyuki-Otsuka-original.JPG". The system will automatically resize it for use in the site.
+          - label: Content
+            name: body
+            widget: markdown
+            required: false
+            hint: Enter the content of the page. 
+      - label: "代表取締役社長ご挨拶"
+        name: ceo-message-ja
+        file: src/ceo-message.md
+        fields: 
+          - label: Page Title
+            name: title
+            widget: string
+            hint: Enter the title of the page, in the same language as the content. This appears on the page above the bold title, as well as in the browser tab.
+          - label: Page Bold Name
+            name: name
+            widget: string
+            hint: Enter the text for the bold title on the page, in the same language as the content.
+          - label: Image
+            name: img
+            widget: image
+            hint: Upload the featured image of the person, in portrait format with a width of at least 2000 pixels, and a name like "Hiroyuki-Otsuka-original.JPG". The system will automatically resize it for use in the site.
+          - label: Content
+            name: body
+            widget: markdown
+            required: false
+            hint: Enter the content of the page. 
+      - label: "Team List"
+        name: team-list-en
+        file: src/en/team.yml
+        fields: 
+          - label: Page Title
+            name: title
+            widget: string
+            hint: Enter the title of the page, in the same language as the content. This appears as the bold title, as well as in the browser tab.
+          - label: Display Date
+            name: displaydate
+            widget: string
+            hint: Enter the update date to be displayed on the page, in the same language as the content.
+      - label: "チーム紹介"
+        name: team-list-ja
+        file: src/team.yml
+        fields: 
+          - label: Page Title
+            name: title
+            widget: string
+            hint: Enter the title of the page, in the same language as the content. This appears as the bold title, as well as in the browser tab.
+          - label: Display Date
+            name: displaydate
+            widget: string
+            hint: Enter the update date to be displayed on the page, in the same language as the content.

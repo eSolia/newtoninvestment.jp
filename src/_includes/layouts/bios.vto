@@ -1,0 +1,28 @@
+---
+layout: ./base.vto
+containerClass: bios
+---
+<section id="bios">
+  <div class="inner">
+    <h2 class="new-title">{{ title }}</h2>
+  </div>
+  <ul id="bios-list">
+    <li class="bios-update">
+      <time>{{ displaydate }}</time>
+    </li>
+    {{ for item of search.pages(`type=bio lang=${lang}`, "weight") }}
+    <li>
+      <article id="bio">
+        <a class="bio-header" href="{{ item.url }}">
+          <img src="{{ item.img }}" alt="Bio page list thumbnail for {{ item.name }}, {{ item.position }}" width="200" height="200" transform-images="avif webp jpg 200@2">
+
+          <div>
+            <p class="bio-position">{{ item.position }}</p>
+            <h3 class="new-title is-bio-list">{{ item.name }}</h3>
+          </div>
+        </a>
+      </article>
+    </li>
+    {{ /for }}
+  </ul>
+</section>

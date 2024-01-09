@@ -1,0 +1,5 @@
+type: news
+layout: layouts/news.vto
+priority: 0.9
+metas:
+  image: =img

@@ -1,0 +1,79 @@
+layout: layouts/base.vto
+priority: 0.8
+metas:
+  title: =title
+  description: =description
+  image: /assets/img/ogp.png
+  icon: /favicon.ico
+  site: =site.title
+  generator: true
+
+menu:
+  - text: Mission
+    url: /#mission
+  - text: Goal
+    url: /#goal
+  - text: Approach
+    url: /#approach
+  - text: Company
+    url: /#company
+  - text: News
+    url: /news/
+  - text: Team
+    url: /team/
+  - text: Inquiries
+    url: /#inquiries
+
+footer:
+  copy: NEWTON INVESTMENT PARTNERS
+  links:
+    - text: ご利用条件
+      url: /terms/
+    - text: プライバシーポリシー
+      url: /privacy/
+    - text: 反社ポリシー
+      url: /antisocial/
+
+site:
+  title: NEWTON INVESTMENT PARTNERS
+  description: 長期的かつ持続的な「期待感」を生める企業への変革を意図する経営陣を有する企業を、中長期でのマイノリティー投資を通じて、主要株主としてNewton Investment Partnersは支援します。
+ldDefaults:
+    worksFor: 
+      name: ニュートン・インベストメント・パートナーズ
+      legalName: ニュートン・インベストメント・パートナーズ株式会社
+    contactPoint:
+      contactType: お問合せ
+
+en:
+  site:
+    title: NEWTON INVESTMENT PARTNERS
+    description: Through mid- to long-term minority investments, we support companies with management teams that aspire to transform their businesses by helping them to create expectations of long-term and sustainable growth for their stakeholders.
+  ldDefaults:
+    worksFor: 
+      name: Newton Investment Partners
+      legalName: Newton Investment Partners, Inc.
+    contactPoint:
+      contactType: Inquiries
+  menu:
+    - text: Mission
+      url: /en/#mission
+    - text: Goal
+      url: /en/#goal
+    - text: Approach
+      url: /en/#approach
+    - text: Company
+      url: /en/#company
+    - text: News
+      url: /en/news/
+    - text: Our People
+      url: /en/team/
+    - text: Inquiries
+      url: /en/#inquiries
+
+  footer:
+    copy: NEWTON INVESTMENT PARTNERS
+    links:
+      - text: Terms of Use
+        url: /en/terms/
+      - text: Privacy Policy
+        url: /en/privacy/

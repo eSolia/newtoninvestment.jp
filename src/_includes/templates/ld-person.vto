@@ -1,0 +1,35 @@
+<script type="application/ld+json">
+{{ set fullUrl = url |> url(true) }}
+{{ set fullUrlImage = img |> url(true) }}
+{{ set contactPointType = ldDefaults.contactPoint.contactType }}
+{{ set worksForName = ldDefaults.worksFor.name }}
+{{ set worksForLegalName = ldDefaults.worksFor.legalName }}
+{{- {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    image: fullUrlImage,
+    jobTitle: position,
+    name: name,
+    url: fullUrl,
+    worksFor: {
+        "@type": "Organization",
+        name: worksForName,
+        legalName: worksForLegalName,
+        foundingDate: "2023",
+        "url": "https://newtoninvestment.jp",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://newtoninvestment.jp/assets/img/ogp.png",
+            "width": 1200,
+            "height": 630
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": contactPointType,
+            "telephone": "+81-3-4510-2987",
+            "email": "contact@newtoninvestment.jp"
+        },
+    },
+    ...ldPerson
+} |> JSON.stringify -}}
+</script>

@@ -1,0 +1,75 @@
+<header>
+  <div class="inner">
+    <div class="logo">
+      <a href="{{ lang === 'ja' ? '/' : '/en/' }}" aria-label="Logo linking to home page">
+        <img class="logo_b" src="/assets/img/logo_b.svg" alt="Logo for Newton Investment Partners, Inc. in svg format.">
+      </a>
+    </div>
+    <menu class="main">
+      <ul>
+        {{ for item of menu }}
+          <li><a class="menu-link" href="{{ item.url }}" aria-label="Top nav menu link">{{ item.text }}</a></li>
+        {{ /for }}
+      </ul>
+    </menu>
+
+    <div class="lang">
+      {{ if lang === 'ja' }}
+        {{ set alt = alternates.find((data) => data.lang === 'en') }}
+        <a href="{{ url }}" class=current>Jp</a>
+        <a href="{{ alt?.url || '/en/' }}">En</a>
+      {{ else }}
+        {{ set alt = alternates.find((data) => data.lang === 'ja') }}
+        <a href="{{ alt?.url || '/' }}">Jp</a>
+        <a href="{{ url }}" class=current>En</a>
+      {{ /if }}
+    </div>
+  </div>
+</header>
+
+<a class="btn-menu is-sp" href="javascript:void(0);" aria-label="Menu">
+  <div class="icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</a>
+
+<div class="lang is-sp">
+  {{ if lang === 'ja' }}
+    <span class="lang-item current">Jp</span>
+  {{ else }}
+    {{ set alt = alternates.find((data) => data.lang === 'ja') }}
+    <a class="lang-item" href="{{ alt?.url || '/' }}">Jp</a>
+  {{ /if }}
+
+  {{ if lang === 'en' }}
+    <span class="lang-item current">En</span>
+  {{ else }}
+    {{ set alt = alternates.find((data) => data.lang === 'en') }}
+    <a class="lang-item" href="{{ alt?.url || '/en/' }}">En</a>
+  {{ /if }}
+</div>
+
+<div class="menu is-sp">
+  <div class="inner">
+    <div class="menu-content">
+      <div class="">
+        <div class="logo">
+          <a href="{{ lang === 'ja' ? '/' : '/en/' }}">
+            <img src="/assets/img/logo_w.svg" alt="Logo for Newton Investment Partners, Inc. in svg format." width="496">
+          </a>
+        </div>
+        <menu class="main">
+          <ul>
+            <ul>
+              {{ for item of menu }}
+                <li><a class="menu-link" href="{{ item.url }}">{{ item.text }}</a></li>
+              {{ /for }}
+            </ul>
+          </ul>
+        </menu>
+      </div>
+    </div>
+  </div>
+</div>

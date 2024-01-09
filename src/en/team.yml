@@ -1,0 +1,7 @@
+layout: layouts/bios.vto
+id: team
+title: Our People
+displaydate: As of Jan 2024
+metas:
+  title: Team Member Biographies
+  description: Our executive team member biographies.

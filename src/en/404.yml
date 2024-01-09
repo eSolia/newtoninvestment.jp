@@ -1,0 +1,13 @@
+layout: layouts/error.vto
+url: /404.html
+title: "404: Page Not Found"
+id: 404
+description: |
+  Sorry, the page you are looking for could not be found.
+
+content:
+  title: "Error 404:<br /><span>Page Not</span> Found"
+  description: We're sorry, the page you attempted to access could not be found. The address may be incorrect or the page may have been moved. Consider trying our [search page](/en/search/).
+  button:
+    title: Return Home
+    url: /en/

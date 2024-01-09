@@ -1,0 +1,10 @@
+<script>
+window.addEventListener('load', (event) => {
+  document.querySelectorAll('.menu-link').forEach(item => {
+    item.addEventListener('click', event => {
+      let fileName = item.getAttribute('href');
+      fathom.trackEvent(`menu click: ${fileName}`);
+    });
+  });
+});
+</script>

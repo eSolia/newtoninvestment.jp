@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8">
+  <title> 
+  {{ it.title ? `${title} | ${site.title}` : site.title }}
+  </title>
+  <meta http-equiv="Content-Language" content="{{ lang }}">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+  {{# <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> #}}
+
+  
+  <!-- Adobe TypeKit for Accent Font -->
+  <!-- <link rel="stylesheet" href="https://use.typekit.net/pmc0ikl.css">-->
+  <script src="//use.typekit.net/pmc0ikl.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <!-- / Adobe -->
+
+  <!-- Fathom - beautiful, simple website analytics -->
+  <script src="https://cdn.usefathom.com/script.js" data-site="EGWBHZIW" defer></script>
+  <!-- / Fathom -->
+
+  {{ if "ldPerson" in it }}
+    {{ include "templates/ld-person.vto" }}
+  {{ /if }}
+  
+</head>
+<body>
+  <div class="container {{ it.containerClass }}">
+    {{ include "templates/header.vto" }}
+
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+
+  {{ include "templates/footer.vto" }}
+
+  {{ include "templates/fathom-menu-track.vto"}}
+</body>
+</html>
