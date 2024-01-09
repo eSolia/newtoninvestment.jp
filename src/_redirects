@@ -1,3 +1,7 @@
 # redirect ceo to ceo-message due to content being in new bios section
-/ceo      /ceo-message      301
-/en/ceo   /en/ceo-message   301
+# SWITCH after actual ceo message is available
+# AS OF 20240109 redirect to the similar content
+# /ceo      /ceo-message      301
+# /en/ceo   /en/ceo-message   301
+/ceo      /team/代表取締役社長ceo_大塚_博行_ja/      301
+/en/ceo   /en/team/hiroyuki-otsuka-rd-and-ceo_en/   301
