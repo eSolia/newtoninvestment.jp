@@ -1,10 +1,10 @@
 backend:
   name: git-gateway
-  branch: lume
+  branch: main
 
-site_url: https://lume--newtoninvestment-jp.netlify.app/
-display_url: https://lume--newtoninvestment-jp.netlify.app/
-logo_url: https://lume--newtoninvestment-jp.netlify.app/assets/img/ogp.png
+site_url: https://newtoninvestment.jp/
+display_url: https://newtoninvestment.jp/
+logo_url: https://newtoninvestment.jp/assets/img/ogp.png
 
 media_folder: /src/media
 public_folder: /media
