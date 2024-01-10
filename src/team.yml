@@ -1,7 +1,7 @@
 layout: layouts/bios.vto
 id: team
 title: Our People
-displaydate: 2024年1月現在
+displaydate: 2024年1月現在 (50音順表示)
 metas:
   title: チーム紹介
   description: 弊社のチーム紹介ページです。
