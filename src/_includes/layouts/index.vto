@@ -48,7 +48,7 @@ containerClass: index
     <h2 class="new-title">{{ news.title }}</h2>
     <div class="desc">
       <ul class="news-list" id="news">
-        {{ for item of search.pages(`type=news lang=${lang}`, "date=desc", 10) }}
+        {{ for item of search.pages(`type=news lang=${lang}`, "date=desc", 5) }}
         <li>
           <time class="txt-bl"><strong>{{ item.date |> date(undefined, lang) }}</strong></time>
           {{ if item.external_link }}

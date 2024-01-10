@@ -8,7 +8,7 @@ priority: 1
 news:
   title: News
   link:
-    text: View more
+    text: 全てを見る
     url: /news/
 
 lead: |

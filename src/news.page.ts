@@ -10,7 +10,7 @@ export const en = {
 
 export default function* ({ search, paginate }: Lume.Data) {
   for (const lang of ["ja", "en"]) {
-    const news = search.pages(`type=news lang=${lang}`);
+    const news = search.pages(`type=news lang=${lang}`, "date=desc");
     const result = paginate(news, {
       url(n: number) {
         if (n === 1) {
