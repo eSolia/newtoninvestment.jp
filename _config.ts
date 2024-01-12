@@ -53,7 +53,10 @@ site.use(filterPages({
 }));
 
 site.use(sitemap({
+  lastmod: "date",
   priority: "priority",
+  filename: "sitemap.xml",
+  sort: "date=desc",
 }));
 
 // site.loadPages([".tmpl.js"]);
