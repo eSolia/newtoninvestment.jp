@@ -66,6 +66,7 @@ site.preprocess([".html"], (pages) => {
 });
 
 site.use(sitemap({
+  query: "external_link=undefined",
   lastmod: "lastmod",
   priority: "priority",
   filename: "sitemap.xml",
