@@ -57,7 +57,7 @@ site.use(filterPages({
 site.use(sitemap({
   lastmod: "date",
   priority: "priority",
-  filename: "sitemap.xml",
+  filename: "sitemap-lume.xml",
   sort: "date=desc",
 }));
 
