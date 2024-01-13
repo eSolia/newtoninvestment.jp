@@ -10,6 +10,7 @@ import lightningcss from "lume/plugins/lightningcss.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 import picture from "lume/plugins/picture.ts";
 import pagefind from "lume/plugins/pagefind.ts";
+import { getGitDate } from "lume/core/utils/date.ts";
 
 import en from "npm:date-fns@2.30.0/locale/en-US/index.js";
 import ja from "npm:date-fns@2.30.0/locale/ja/index.js";
@@ -54,8 +55,18 @@ site.use(filterPages({
   fn: (page) => !page.data.external_link,
 }));
 
+site.preprocess([".html"], (pages) => {
+  for (const page of pages) {
+    const src = page.src.entry?.src;
+
+    if (src) {
+      page.data.lastmod = getGitDate("modified", src);
+    }
+  }
+});
+
 site.use(sitemap({
-  lastmod: "date",
+  lastmod: "lastmod",
   priority: "priority",
   filename: "sitemap.xml",
   sort: "date=desc",
@@ -77,10 +88,12 @@ site.copy("favicon.svg");
 
 // Create zip and tree scripts
 site.script("zipsite", "zip -r _site/nwtn_site.zip _site");
-site.script("maketree", "cd _site && tree -H . -L 5 --charset utf-8 -C -h -o nwtn_tree.html");
+site.script(
+  "maketree",
+  "cd _site && tree -H . -L 5 --charset utf-8 -C -h -o nwtn_tree.html",
+);
 // Execute scripts after build
 site.addEventListener("afterBuild", "zipsite");
 site.addEventListener("afterBuild", "maketree");
-
 
 export default site;
