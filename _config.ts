@@ -13,6 +13,8 @@ import pagefind from "lume/plugins/pagefind.ts";
 
 import en from "npm:date-fns@2.30.0/locale/en-US/index.js";
 import ja from "npm:date-fns@2.30.0/locale/ja/index.js";
+// import en from "npm:date-fns@3.2.0/locale/en-US/index.js";
+// import ja from "npm:date-fns@3.2.0/locale/ja/index.js";
 
 // Change markdown-it configuration
 // const markdown = {
