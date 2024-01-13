@@ -70,7 +70,7 @@ site.use(sitemap({
   lastmod: "lastmod",
   priority: "priority",
   filename: "sitemap.xml",
-  sort: "date=desc",
+  sort: "lastmod=desc",
 }));
 
 // site.loadPages([".tmpl.js"]);
