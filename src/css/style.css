@@ -509,6 +509,13 @@ a {
       text-align: center; }
     .content section {
       padding-bottom: 120px; }
+      .content section .inner h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+        font-size: 38px;
+        line-height: 1.0;
+        color: #00236D; }
       .content section .inner h2 {
         text-align: center;
         margin-bottom: 60px;
@@ -1282,7 +1289,8 @@ a {
   border-radius: 1%;
 }
 .bio-view-header h3 {
-  font-size: 20px;
+  font-size: 30px;
+  color: #555555;
 }
 .txt.from-markdown p + p {
   margin-top: 1em;
