@@ -1,11 +1,13 @@
 export const layout = "layouts/news_list.vto";
 
 export const ja = {
-  title: "ニュース",
+  title: "ニュース一覧",
+  description: "社内ニュースページや外部ニュースへのリンクを含む、ニュートン・インベストメント・パートナーズ ニュース 一覧",
 };
 
 export const en = {
-  title: "News",
+  title: "News Listing",
+  description: "Newton Investment Partners News List with internal news pages and links to external news pages.",
 };
 
 export default function* ({ search, paginate }: Lume.Data) {
