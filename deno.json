@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "lume": "TZ='Asia/Tokyo' echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+    "lume": "export TZ='Asia/Tokyo' && echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s",
     "local-serve": "deno run --allow-read=. --allow-net index.ts"
