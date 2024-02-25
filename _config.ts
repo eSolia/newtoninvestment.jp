@@ -5,6 +5,8 @@ import metas from "lume/plugins/metas.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import decapCMS from "lume/plugins/decap_cms.ts";
 import date from "lume/plugins/date.ts";
+import { enUS } from "npm:date-fns/locale/en-US";
+import { ja } from "npm:date-fns/locale/ja";
 import filterPages from "lume/plugins/filter_pages.ts";
 import lightningcss from "lume/plugins/lightningcss.ts";
 import transformImages from "lume/plugins/transform_images.ts";
@@ -12,8 +14,8 @@ import picture from "lume/plugins/picture.ts";
 import pagefind from "lume/plugins/pagefind.ts";
 import { getGitDate } from "lume/core/utils/date.ts";
 
-import en from "npm:date-fns@2.30.0/locale/en-US/index.js";
-import ja from "npm:date-fns@2.30.0/locale/ja/index.js";
+// import en from "npm:date-fns@2.30.0/locale/en-US/index.js";
+// import ja from "npm:date-fns@2.30.0/locale/ja/index.js";
 // import en from "npm:date-fns@3.2.0/locale/en-US/index.js";
 // import ja from "npm:date-fns@3.2.0/locale/ja/index.js";
 
@@ -33,7 +35,7 @@ const site = lume(
 );
 
 site.use(date({
-  locales: { en, ja },
+  locales: { enUS, ja },
 }));
 
 site.use(multilanguage({
