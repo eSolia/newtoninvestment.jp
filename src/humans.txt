@@ -3,7 +3,7 @@
 
 /* TEAM */
 
-    Owner: Newton Investment Partners Inc.
+    Owner: Newton Investment Partners, Inc.
     Contact: https://newtoninvestment.jp/en#inquiries
     Original Design: http://minsak.jp
     Design Updates and Generator Dev: Óscar Otero https://oscarotero.com/
