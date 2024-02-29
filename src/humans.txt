@@ -1,7 +1,7 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
 
-/* TEAM */
+/* PROJECT TEAM */
 
     Owner: Newton Investment Partners, Inc.
     Contact: https://newtoninvestment.jp/en#inquiries
@@ -9,9 +9,16 @@
     Design Updates and Generator Dev: Óscar Otero https://oscarotero.com/
     Infrastructure: Rick Cogley https://esolia.com
 
+/* SITE */
+
+    Purpose: Marketing site with basic info about NIP's mission and approach, news items and links, personnel pages.
+    Languages: English / Japanese
+    Build Process: Static Site Generator rebuilds on git push, using templates so that changes do not have to be made on every page manually. 
+
 /* TECHNOLOGY */
 
-    Site Base: HTML5, CSS3, Javascript
+    Site Code: HTML5, CSS3, Client-side Javascript
+    IDE: VS Code
     Site Generator: Lume, https://lume.land/
     Site Templates: Vento, https://vento.js.org/
     Site CMS: decapCMS, https://decapcms.org/
@@ -19,11 +26,9 @@
     Site and DNS Hosting: Netlify
     Registrar: GoDaddy
 
-/* SITE */
+/* CHANGE LOG */
 
-	  Launches: 
-         * Original: 2023/10/30
-         * Lume and decapCMS Update: 2024/01/09
-	  Languages: English / Japanese
-	  Doctype: HTML5
-	  IDE: VS Code
+	2023/10/30 - Original Launch as manual HTML site
+    2024/01/09 - Convert manual to SSG style using Lume generator and decapCMS 
+	  
+
